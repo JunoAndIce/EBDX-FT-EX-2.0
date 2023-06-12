@@ -1,0 +1,2706 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[000]
+WildBattleBGM = Vs.Wild Pokemon.ogg
+TrainerBattleBGM = Trainer Battle.ogg
+WildCaptureME = Battle capture success.ogg
+#-------------------------------
+[001]   # Intro
+Name = Intro
+#-------------------------------
+[002]   # Route O: Underwater
+Name = Lappet Town
+MapPosition = 0,17,16
+Environment = Underwater
+#-------------------------------
+[003]   # Route O: Underwater
+Name = \PN's house
+HealingSpot = 2,8,8
+MapPosition = 0,17,16
+Environment = Underwater
+#-------------------------------
+[004]   # Route O: Underwater
+Name = Pokémon Lab
+ShowArea = false
+MapPosition = 0,17,16
+Environment = Underwater
+#-------------------------------
+[005]   # Route O
+Name = Route O
+Name = 
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,17,17
+DiveMap = 3
+#-------------------------------
+[006]   # Flooded Cave
+Name = Flooded Cave
+Name = 
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,17,17
+Environment = Cave
+#-------------------------------
+[007]   # Flooded Cave
+Name = Flooded Cave
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,17,17
+Environment = Cave
+#-------------------------------
+[008]   # Heated Caverns
+Name = Heated Caverns
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[009]   # Heated Caverns
+Name = Heated Caverns
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[010]   # Sky Realm
+Name = Sky Realm
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,28,1
+Environment = Sky
+#-------------------------------
+[011]   # Route O: Underwater
+Name = Route O: Underwater
+Outdoor = false
+ShowArea = true
+MapPosition = 0,23,14
+DiveMap = 397
+Environment = Underwater
+#-------------------------------
+[012]   # Route O Underwater
+Name = Route O Underwater
+MapPosition = 0,22,14
+Environment = Underwater
+#-------------------------------
+[013]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,22,14
+DiveMap = 12
+#-------------------------------
+[014]   # Frozen Cave
+Name = Frozen Cave
+Bicycle = true
+MapPosition = 0,22,14
+Environment = Cave
+#-------------------------------
+[015]   # Rocky Caverns
+Name = Rocky Caverns
+ShowArea = true
+Bicycle = true
+MapPosition = 0,19,10
+Environment = Cave
+#-------------------------------
+[016]   # Ixora Cavern Pits
+Name = Ixora Cavern Pits
+Bicycle = true
+MapPosition = 0,2,18
+#-------------------------------
+[017]   # Ixora Cavern: Iron Zone
+Name = Ixora Cavern: Iron Zone
+Name = 
+Bicycle = true
+MapPosition = 0,2,18
+#-------------------------------
+[018]   # Oddstone Cave
+Name = Oddstone Cave
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,18
+#-------------------------------
+[019]   # Passiflora Path: Underwater
+Name = Passiflora Path: Underwater
+MapPosition = 0,20,2
+Environment = Underwater
+#-------------------------------
+[020]   # Passiflora Path: Underwater
+Name = Passiflora Path: Underwater
+MapPosition = 0,20,3
+Environment = Underwater
+#-------------------------------
+[021]   # Draco Cove
+Name = Draco Cove
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,20,3
+DiveMap = 20
+Environment = Cave
+#-------------------------------
+[023]   # Dark Caverns
+Name = Dark Aster Caverns
+MapPosition = 0,18,8
+Environment = Cave
+#-------------------------------
+[024]   # Dark Cavern Clearing
+Name = Dark Cavern Clearing
+MapPosition = 0,18,8
+Environment = Cave
+#-------------------------------
+[025]   # Dark Cavern Clearing
+Name = Dark Cavern Clearing
+MapPosition = 0,18,8
+Environment = Cave
+#-------------------------------
+[026]   # Route O: Underwater
+Name = Route O: Underwater
+MapPosition = 0,23,14
+Environment = Underwater
+#-------------------------------
+[027]   # Route O: Underwater
+Name = Route O: Underwater
+MapPosition = 0,23,14
+Environment = Underwater
+#-------------------------------
+[028]   # Underwater Cavern
+Name = MAP028
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,14
+DiveMap = 27
+Environment = Cave
+#-------------------------------
+[029]   # Route O: Underwater
+Name = Route O: Underwater
+MapPosition = 0,17,16
+Environment = Underwater
+#-------------------------------
+[030]   # Hokkaido Mountains 3F: Split
+Name = MAP030
+Environment = Cave
+#-------------------------------
+[031]   # Swamp Shrine
+Name = Swamp Shrine
+MapPosition = 0,4,9
+#-------------------------------
+[038]   # Route D
+Name = Route D
+Outdoor = false
+ShowArea = false
+Bicycle = false
+MapPosition = 0,6,12
+#-------------------------------
+[041]   # Legend - Final
+Name = Legend - Final Challenge
+ShowArea = true
+Environment = Cave
+#-------------------------------
+[042]   # Greenleaf Orphanage
+Name = Greenleaf Orphanage
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 42,27,13
+MapPosition = 0,11,16
+#-------------------------------
+[043]   # -
+Name = -
+Outdoor = true
+ShowArea = false
+#-------------------------------
+[044]   # Final Challenge
+Name = Final Challenge
+Name = 
+Outdoor = false
+ShowArea = true
+Environment = Cave
+#-------------------------------
+[045]   # Lillium City
+Name = Route 6
+Outdoor = true
+ShowArea = true
+BicycleAlways = true
+MapPosition = 0,11,10
+#-------------------------------
+[046]   # Route D
+Name = Cycling Road gate
+Bicycle = true
+MapPosition = 0,12,6
+#-------------------------------
+[047]
+Name = Route 7
+Outdoor = true
+ShowArea = true
+Weather = Rain,0
+MapPosition = 0,15,10
+BattleBack = rocky
+MapSize = 2,11
+Environment = Rock
+#-------------------------------
+[048]   # Greenleaf Orphanage
+Name = Greenleaf Orphanage
+MapPosition = 0,11,16
+#-------------------------------
+[049]
+Name = Rock Cave
+Bicycle = true
+MapPosition = 0,16,10
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[050]
+Name = Rock Cave
+Bicycle = true
+MapPosition = 0,16,10
+DarkMap = true
+BattleBack = cave3
+Environment = Cave
+#-------------------------------
+[051]
+Name = Dungeon
+Bicycle = true
+MapPosition = 0,16,10
+Dungeon = true
+BattleBack = cave2
+Environment = Cave
+#-------------------------------
+[052]
+Name = Battle Frontier
+Outdoor = true
+ShowArea = true
+MapPosition = 0,17,10
+#-------------------------------
+[053]
+Name = Battle Frontier Poké Center
+HealingSpot = 52,17,14
+MapPosition = 0,17,10
+#-------------------------------
+[054]
+Name = Battle Frontier Mart
+MapPosition = 0,17,10
+#-------------------------------
+[055]
+Name = Battle Tower
+HealingSpot = 52,30,10
+MapPosition = 0,17,10
+#-------------------------------
+[056]
+Name = Battle Tower arena
+MapPosition = 0,17,10
+BattleBack = indoor1
+#-------------------------------
+[057]
+Name = Stadium Cup lobby
+MapPosition = 0,17,10
+#-------------------------------
+[058]
+Name = Battle Palace
+MapPosition = 0,17,10
+#-------------------------------
+[059]
+Name = Battle Palace arena
+MapPosition = 0,17,10
+BattleBack = indoor1
+#-------------------------------
+[060]
+Name = Battle Arena
+MapPosition = 0,17,10
+#-------------------------------
+[061]
+Name = Battle Arena arena
+MapPosition = 0,17,10
+BattleBack = indoor1
+#-------------------------------
+[062]
+Name = Battle Factory
+MapPosition = 0,17,10
+#-------------------------------
+[063]
+Name = Battle Factory intro corridor
+MapPosition = 0,17,10
+#-------------------------------
+[064]
+Name = Battle Factory arena
+MapPosition = 0,17,10
+BattleBack = indoor1
+#-------------------------------
+[065]
+Name = Battle Factory corridor
+MapPosition = 0,17,10
+#-------------------------------
+[066]
+Name = Safari Zone
+Outdoor = true
+ShowArea = true
+MapPosition = 0,12,12
+BattleBack = field
+#-------------------------------
+[067]
+Name = Safari Zone gate
+MapPosition = 0,12,12
+#-------------------------------
+[068]
+Name = Safari Zone
+Outdoor = true
+ShowArea = true
+MapPosition = 0,12,12
+SafariMap = true
+BattleBack = forest
+Environment = Forest
+#-------------------------------
+[069]
+Name = Route 8
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,13
+DiveMap = 70
+BattleBack = field
+#-------------------------------
+[070]
+Name = Underwater
+MapPosition = 0,13,13
+BattleBack = underwater
+Environment = Underwater
+#-------------------------------
+[071]
+Name = Harbor
+MapPosition = 0,13,13
+#-------------------------------
+[072]
+Name = Berth Island
+Outdoor = true
+ShowArea = true
+Weather = Storm,50
+MapPosition = 0,18,17
+BattleBack = field
+#-------------------------------
+[073]
+Name = Faraday Island
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,16
+BattleBack = field
+#-------------------------------
+[074]
+Name = Cycling Road gate
+Bicycle = true
+MapPosition = 0,12,10
+#-------------------------------
+[075]   # Rialtra Region
+Name = Rialtra Region
+Outdoor = true
+MapPosition = 1,13,16
+BattleBack = city
+#-------------------------------
+[076]   # Greenleaf Orphanage
+Name = Greenleaf Orphanage
+Outdoor = false
+MapPosition = 0,11,16
+#-------------------------------
+[077]   # Greenleaf Orphanage Gate
+Name = Greenleaf Orphanage Gate
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,12,16
+#-------------------------------
+[078]   # Helianthus Town
+Name = Helianthus Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 78,34,24
+MapPosition = 0,14,16
+#-------------------------------
+[079]   # Helianthus Town
+Name = Helianthus Town
+MapPosition = 0,14,16
+#-------------------------------
+[080]   # Helianthus Town
+Name = Helianthus Town
+MapPosition = 0,14,16
+#-------------------------------
+[081]   # Helianthus Town
+Name = Helianthus Town
+MapPosition = 0,14,16
+#-------------------------------
+[082]   # Helianthus Town
+Name = Helianthus Town
+MapPosition = 0,14,16
+#-------------------------------
+[083]   # Avit's Lab
+Name = Avit's Lab
+MapPosition = 0,14,16
+#-------------------------------
+[084]   # Helianthus Pokémon Center
+Name = Helianthus Pokémon Center
+MapPosition = 0,14,16
+#-------------------------------
+[085]   # Route A
+Name = Route A
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,14,14
+Environment = Grass
+#-------------------------------
+[086]   # Route A Gate
+Name = Route A Gate
+Bicycle = true
+MapPosition = 0,14,15
+#-------------------------------
+[087]   # Route A Gate
+Name = Route A Gate
+Bicycle = true
+MapPosition = 0,14,13
+#-------------------------------
+[088]   # Lillium Ranch
+Name = Lillium Ranch
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 88,40,11
+MapPosition = 0,16,14
+MapSize = 0,
+Environment = Grass
+#-------------------------------
+[089]   # Lillium Ranch Gate
+Name = Lillium Ranch Gate
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,15,14
+#-------------------------------
+[090]   # Leona and Gray's House
+Name = Leona and Gray's House
+MapPosition = 0,16,14
+#-------------------------------
+[091]   # Lillium City
+Name = Lillium City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 91,38,41
+MapPosition = 0,14,12
+#-------------------------------
+[092]   # Floral Department
+Name = Floral Department
+MapPosition = 0,14,12
+#-------------------------------
+[093]   # Lillium City
+Name = Lillium City
+MapPosition = 0,14,12
+#-------------------------------
+[094]   # Lillium City
+Name = Lillium City
+MapPosition = 0,14,12
+#-------------------------------
+[095]   # Lillium City
+Name = Lillium City
+MapPosition = 0,14,16
+#-------------------------------
+[096]   # Lillium City
+Name = Lillium City
+MapPosition = 0,14,16
+#-------------------------------
+[097]   # Lillium City
+Name = Lillium City
+MapPosition = 0,14,16
+#-------------------------------
+[098]   # Lillium Pokémon Center
+Name = Lillium Pokémon Center
+MapPosition = 0,14,12
+#-------------------------------
+[099]   # PokéMart
+Name = PokéMart
+Outdoor = false
+MapPosition = 0,14,12
+#-------------------------------
+[100]   # Lillium City Home
+Name = Lillium City Home
+MapPosition = 0,14,12
+#-------------------------------
+[101]   # Lillium City Home
+Name = Lillium City Home
+MapPosition = 0,14,12
+#-------------------------------
+[102]   # Lillium City Home
+Name = Lillium City Home
+MapPosition = 0,14,12
+#-------------------------------
+[103]   # Route B
+Name = Route B
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,100
+MapPosition = 0,15,12
+Environment = Grass
+#-------------------------------
+[104]   # Route B Gate
+Name = Route B Gate
+MapPosition = 0,16,12
+#-------------------------------
+[105]   # Lillium Forest
+Name = Lillium Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = HeavyRain,100
+MapPosition = 0,16,12
+Environment = Forest
+#-------------------------------
+[106]   # Route B Gate
+Name = Route B Gate
+MapPosition = 0,16,10
+#-------------------------------
+[107]   # Route B
+Name = Route B
+MapPosition = 0,16,12
+#-------------------------------
+[108]   # Paeonia City
+Name = Paeonia City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 108,55,88
+Weather = Rain,0
+MapPosition = 0,16,9
+#-------------------------------
+[109]   # Paeonia Shopping District
+Name = Paeonia Shopping District
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,14,9
+#-------------------------------
+[110]   # Paeonia Gate
+Name = Paeonia Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,14,9
+#-------------------------------
+[111]   # Park House
+Name = Park House
+MapPosition = 0,13,7
+#-------------------------------
+[112]   # Paeonia Residential Area
+Name = Paeonia Residential Area
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 112,48,24
+MapPosition = 0,13,9
+#-------------------------------
+[113]   # Paeonia Gate
+Name = Paeonia Gate
+MapPosition = 0,15,9
+#-------------------------------
+[114]   # Paeonia Park
+Name = Paeonia Park
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,13,7
+BattleBack = 
+Environment = Grass
+#-------------------------------
+[115]   # Park Gate
+Name = Park Gate
+MapPosition = 0,13,8
+#-------------------------------
+[116]   # Paeonia Park Secret Area
+Name = Paeonia Park Secret Area
+Outdoor = true
+ShowArea = true
+MapPosition = 0,13,7
+#-------------------------------
+[117]   # Abandoned Building
+Name = Abandoned Building
+MapPosition = 0,13,7
+#-------------------------------
+[119]   # Paeonia City
+Name = Paeonia City
+MapPosition = 0,16,9
+#-------------------------------
+[120]   # Paeonia Pokémon Center
+Name = Paeonia Pokémon Center
+MapPosition = 0,16,9
+#-------------------------------
+[121]   # Fine Art's Museum
+Name = Fine Art's Museum
+MapPosition = 0,16,9
+#-------------------------------
+[122]   # Pokemon Ranger HQ
+Name = Pokemon Ranger HQ
+MapPosition = 0,16,9
+#-------------------------------
+[123]   # Name Rater's House
+Name = Name Rater's House
+MapPosition = 0,16,9
+#-------------------------------
+[124]   # Paeonia City
+Name = Paeonia City
+MapPosition = 0,16,9
+#-------------------------------
+[126]   # Paeonia City
+Name = Paeonia City
+MapPosition = 0,16,9
+#-------------------------------
+[127]   # G.H Corporations
+Name = G.H Corporations
+MapPosition = 0,16,9
+#-------------------------------
+[128]   # Devon Corp.
+Name = Devon Corp.
+MapPosition = 0,16,9
+#-------------------------------
+[129]   # Devon Corp. 4th Floor
+Name = Devon Corp. 4th Floor
+MapPosition = 0,16,9
+#-------------------------------
+[130]   # Paeonia Apartments
+Name = Paeonia Apartments
+MapPosition = 0,13,9
+#-------------------------------
+[131]   # Paeonia Apartments
+Name = Paeonia Apartments
+MapPosition = 0,13,9
+#-------------------------------
+[132]   # Paeonia Apartments
+Name = Paeonia Apartments
+MapPosition = 0,14,9
+#-------------------------------
+[133]   # Paeonia Apartments
+Name = Paeonia Apartments
+MapPosition = 0,13,9
+#-------------------------------
+[134]   # Paeonia Pokémon Center
+Name = Paeonia Pokémon Center
+MapPosition = 0,13,9
+#-------------------------------
+[135]   # Paeonia Apartments
+Name = Paeonia Apartments
+MapPosition = 0,13,9
+#-------------------------------
+[136]   # North Route C
+Name = North Route C
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,10,9
+Environment = Grass
+#-------------------------------
+[137]   # South Route C
+Name = South Route C
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,10,14
+Environment = Sand
+#-------------------------------
+[138]   # Route C Gate
+Name = Route C Gate
+Bicycle = true
+MapPosition = 0,11,9
+#-------------------------------
+[139]   # Route C Gate
+Name = Route C Gate
+Outdoor = false
+Bicycle = true
+MapPosition = 0,7,14
+#-------------------------------
+[140]   # Paeonia Forest
+Name = Paeonia Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,10,12
+Environment = Forest
+#-------------------------------
+[141]   # Syringa Town
+Name = Syringa Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 141,25,14
+MapPosition = 0,6,14
+#-------------------------------
+[142]   # Syringa House
+Name = Syringa House
+MapPosition = 0,6,14
+#-------------------------------
+[143]   # Syringa House
+Name = Syringa House
+MapPosition = 0,6,14
+#-------------------------------
+[144]   # Garrison's House
+Name = Garrison's House
+MapPosition = 0,6,14
+#-------------------------------
+[145]   # Move Deleter House
+Name = Move Deleter House
+MapPosition = 0,6,14
+#-------------------------------
+[146]   # Syringa Pokémon Center
+Name = Syringa Pokémon Center
+MapPosition = 0,6,14
+#-------------------------------
+[147]   # Syringa Day-Care
+Name = Syringa Day-Care
+MapPosition = 0,6,14
+#-------------------------------
+[148]   # Syringa Lighthouse
+Name = Syringa Lighthouse
+MapPosition = 0,6,14
+#-------------------------------
+[149]   # PokéMart
+Name = PokéMart
+MapPosition = 0,6,14
+#-------------------------------
+[150]   # Syringa Harbor
+Name = Syringa Harbor
+MapPosition = 0,6,14
+#-------------------------------
+[151]   # Route D
+Name = Route D
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,12
+#-------------------------------
+[152]   # Route D Gate 
+Name = Route D Gate
+MapPosition = 0,6,13
+#-------------------------------
+[153]   # Route E
+Name = Route E
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,14
+Environment = None
+#-------------------------------
+[154]   # Route E
+Name = Route E
+MapPosition = 0,4,14
+#-------------------------------
+[155]   # ???
+Name = ???
+MapPosition = 0,4,14
+#-------------------------------
+[156]   # Route E
+Name = Route E
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,16
+#-------------------------------
+[157]   # Route E
+Name = Route E
+MapPosition = 0,2,16
+#-------------------------------
+[158]   # Hidden Caves
+Name = Hidden Caves
+MapPosition = 0,3,15
+#-------------------------------
+[159]   # Route E Gate
+Name = Route E Gate
+MapPosition = 0,3,14
+#-------------------------------
+[160]   # Route E
+Name = Route E
+Outdoor = true
+MapPosition = 0,6,17
+#-------------------------------
+[161]   # Route E Gate
+Name = Route E Gate
+MapPosition = 0,5,14
+#-------------------------------
+[162]   # S.S Gladiolus
+Name = S.S Gladiolus
+MapPosition = 0,6,17
+#-------------------------------
+[163]   # S.S Gladiolus (Deck)
+Name = S.S Gladiolus (Deck)
+MapPosition = 0,6,17
+#-------------------------------
+[164]   # S.S. Gladiolus
+Name = S.S. Gladiolus
+MapPosition = 0,6,17
+#-------------------------------
+[165]   # S.S. Gladiolus Engine Room
+Name = S.S. Gladiolus Engine Room
+MapPosition = 0,6,17
+#-------------------------------
+[166]   # Ixora Island
+Name = Ixora Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,18
+#-------------------------------
+[167]   # Ixora Forest
+Name = Ixora Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,18
+Environment = Forest
+#-------------------------------
+[168]   # Ruined Castle
+Name = Ruined Castle
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,18
+#-------------------------------
+[169]   # Ruined Castle Sanctuary
+Name = Ruined Castle Sanctuary
+MapPosition = 0,3,18
+#-------------------------------
+[170]   # Ixora Town
+Name = Ixora Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 170,101,27
+MapPosition = 0,1,18
+#-------------------------------
+[171]   # Ixora Rest Area
+Name = Ixora Rest Area
+MapPosition = 0,4,18
+#-------------------------------
+[172]   # Ixora Rest Area
+Name = Ixora Rest Area
+MapPosition = 0,4,18
+#-------------------------------
+[173]   # Ixora Harbor
+Name = Ixora Harbor
+MapPosition = 0,4,18
+#-------------------------------
+[174]   # Ixora Town
+Name = Ixora Town
+MapPosition = 0,1,18
+#-------------------------------
+[175]   # PokéMart
+Name = PokéMart
+MapPosition = 0,1,18
+#-------------------------------
+[176]   # Ixora Town Pokémon Center
+Name = Ixora Town Pokémon Center
+MapPosition = 0,1,18
+#-------------------------------
+[177]   # Ixora Town
+Name = Ixora Town
+MapPosition = 0,1,18
+#-------------------------------
+[178]   # Ixora Cavern
+Name = Ixora Cavern
+ShowArea = true
+Bicycle = true
+MapPosition = 0,3,18
+Environment = Cave
+#-------------------------------
+[179]   # Ixora Cavern
+Name = Ixora Cavern
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,3,18
+Environment = Cave
+#-------------------------------
+[180]   # Ixora Cavern
+Name = Ixora Cavern
+ShowArea = false
+Bicycle = true
+MapPosition = 0,2,18
+Environment = Cave
+#-------------------------------
+[181]   # Ixora Cavern
+Name = Ixora Cavern
+Bicycle = true
+MapPosition = 0,3,18
+Environment = Cave
+#-------------------------------
+[182]   # Ixora Cavern Clearing
+Name = Ixora Cavern Clearing
+Bicycle = true
+MapPosition = 0,3,18
+Environment = Cave
+#-------------------------------
+[183]   #  Ixora Domain
+Name = Ixora Domain
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,18
+Environment = Grass
+#-------------------------------
+[184]   # Blight Mountain Base 1F
+Name = Blight Mountain Base 1F
+MapPosition = 0,2,18
+#-------------------------------
+[185]   # Blight Mountain Base B1F
+Name = Blight Mountain Base B1F
+Outdoor = false
+MapPosition = 0,2,18
+#-------------------------------
+[186]   # Ixora Cavern
+Name = Ixora Cavern
+Bicycle = true
+MapPosition = 0,2,18
+#-------------------------------
+[187]   # Blight Mountain Base Cells
+Name = Blight Mountain Base Cells
+MapPosition = 0,2,18
+#-------------------------------
+[188]   # Ixora Town Gym
+Name = Ixora Town Gym
+MapPosition = 0,1,18
+#-------------------------------
+[189]   # Ixora Town Gym
+Name = Ixora Town Gym
+MapPosition = 0,1,18
+#-------------------------------
+[190]   # Route F
+Name = Route F
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,100
+MapPosition = 0,4,12
+Environment = TallGrass
+#-------------------------------
+[191]   # Route F Gate 
+Name = Route F Gate
+Bicycle = true
+MapPosition = 0,4,11
+#-------------------------------
+[192]   # Nymphaea Town
+Name = Nymphaea Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 192,51,31
+Weather = Rain,100
+MapPosition = 0,4,10
+#-------------------------------
+[193]   # Ranger Outpost
+Name = Ranger Outpost
+MapPosition = 0,4,10
+#-------------------------------
+[194]   # Nymphaea Pokémon Center
+Name = Nymphaea Pokémon Center
+MapPosition = 0,4,10
+#-------------------------------
+[195]   # Nymphaea Town
+Name = Nymphaea Town
+MapPosition = 0,4,10
+#-------------------------------
+[196]   # Nymphaea Gym
+Name = Nymphaea Gym
+MapPosition = 0,4,10
+#-------------------------------
+[197]   # Safari Zone Gate
+Name = Safari Zone Gate
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,10
+#-------------------------------
+[198]   # Nymphaea Town
+Name = Nymphaea Town
+MapPosition = 0,4,10
+#-------------------------------
+[199]   # Forbidden Swamps
+Name = Forbidden Swamps
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,100
+MapPosition = 0,4,9
+#-------------------------------
+[200]   # Forbidden Swamp
+Name = Forbidden Swamp
+MapPosition = 0,4,9
+#-------------------------------
+[201]   # PokéMart
+Name = PokéMart
+MapPosition = 0,4,10
+#-------------------------------
+[202]   # Rest House
+Name = Rest House
+MapPosition = 0,4,12
+#-------------------------------
+[203]   # Hokkaido Mountains 1F
+Name = Hokkaido Mountains
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,9,8
+Environment = Cave
+#-------------------------------
+[204]   # Hokkaido Mountains 2F
+Name = Hokkaido Mountains 2F
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,9,8
+Environment = Cave
+#-------------------------------
+[205]   # Hokkaido Mountains 3F
+Name = Hokkaido Mountains 3F
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,9,8
+Environment = Cave
+#-------------------------------
+[206]   # Hokkaido Mountains 4F
+Name = Hokkaido Mountains 4F
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,9,8
+Environment = Cave
+#-------------------------------
+[207]   # Hokkaido Mountains 5F
+Name = Hokkaido Mountains 5F
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,9,8
+Environment = Cave
+#-------------------------------
+[208]   # Route G
+Name = Route G
+Outdoor = true
+ShowArea = true
+MapPosition = 0,9,5
+#-------------------------------
+[209]   # Route G Gate
+Name = Route G Gate
+Bicycle = true
+MapPosition = 0,9,5
+#-------------------------------
+[210]   # Marigold City
+Name = Marigold City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 210,17,52
+Weather = Rain,0
+MapPosition = 0,8,3
+#-------------------------------
+[211]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[212]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[213]   # Marigold City: Prof. House
+Name = Marigold City: Prof. House
+MapPosition = 0,8,3
+#-------------------------------
+[214]   # Marigold Pokémon Center
+Name = Marigold Pokémon Center
+MapPosition = 0,8,3
+#-------------------------------
+[215]   # Leena's Fashion Industry 
+Name = Leena's Fashion Industry
+MapPosition = 0,8,3
+#-------------------------------
+[216]   # Leena's Fashion Industry 3F
+Name = Leena's Fashion Industry 3F
+MapPosition = 0,8,3
+#-------------------------------
+[217]   # Leena's Fashion Industry 5F
+Name = Leena's Fashion Industry 5F
+MapPosition = 0,8,3
+#-------------------------------
+[218]   # Leena's Fashion Industry 5F
+Name = Leena's Fashion Industry 5F
+MapPosition = 0,8,3
+#-------------------------------
+[219]   # Marigold City: Home Base
+Name = Marigold City: Home Base
+MapPosition = 0,8,3
+#-------------------------------
+[220]   # Undergound Marigold
+Name = Undergound Marigold
+MapPosition = 0,8,3
+#-------------------------------
+[221]   # Underground Marigold
+Name = Underground Marigold
+MapPosition = 0,8,3
+#-------------------------------
+[222]   # Underground Marigold (Center)
+Name = Underground Marigold (Center)
+MapPosition = 0,8,3
+#-------------------------------
+[223]   # Undeground Marigold
+Name = Undeground Marigold
+Outdoor = false
+MapPosition = 0,8,3
+#-------------------------------
+[224]   # Undeground Marigold
+Name = Undeground Marigold
+MapPosition = 0,8,3
+#-------------------------------
+[225]   # Undeground Marigold
+Name = Undeground Marigold
+MapPosition = 0,8,3
+#-------------------------------
+[226]   # Underground Marigold
+Name = Underground Marigold
+MapPosition = 0,8,3
+Environment = Cave
+#-------------------------------
+[227]   # Blight Underground Base
+Name = Blight Underground Base
+MapPosition = 0,8,3
+#-------------------------------
+[228]   # Blight Underground Base
+Name = Blight Underground Base
+MapPosition = 0,8,3
+#-------------------------------
+[229]   # Blight Underground Base
+Name = Blight Underground Base
+MapPosition = 0,8,3
+#-------------------------------
+[230]   # Blight Underground Base B2F
+Name = Blight Underground Base B2F
+MapPosition = 0,8,3
+#-------------------------------
+[232]   # Marigold City Gym
+Name = Marigold City Gym
+MapPosition = 0,8,3
+#-------------------------------
+[233]   # Marigold Gym Battlefield
+Name = Marigold Gym Battlefield
+MapPosition = 0,8,3
+#-------------------------------
+[234]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[235]   # Marigold City Café
+Name = Marigold City Café
+MapPosition = 0,8,3
+#-------------------------------
+[236]   # Route H
+Name = Route H
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,10,5
+#-------------------------------
+[237]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[238]   # Route H Rest Area
+Name = Route H Rest Area
+MapPosition = 0,10,5
+#-------------------------------
+[239]   # Route H Rest Area
+Name = Route H Rest Area
+MapPosition = 0,10,5
+#-------------------------------
+[240]   # Route H Gate
+Name = Route H Gate
+Bicycle = true
+MapPosition = 0,10,5
+#-------------------------------
+[241]   # Hokkaido Mountain Clearing
+Name = Hokkaido Mountain Clearing
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,5
+Environment = Cave
+#-------------------------------
+[242]   # Frozen Hokkaido Mountains 1F
+Name = Frozen Hokkaido Mountains 1F
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,4
+Environment = Cave
+#-------------------------------
+[243]   # Frozen Hokkaido Mountains 2F
+Name = Frozen Hokkaido Mountains 2F
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,3
+Environment = Cave
+#-------------------------------
+[244]   # Frozen Hokkaido Mountains 3F
+Name = Frozen Hokkaido Mountains 3F
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,3
+Environment = Cave
+#-------------------------------
+[245]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[246]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[247]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[248]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[249]   # Galanthus Town
+Name = Galanthus Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 249,58,26
+Weather = Snow,100
+MapPosition = 0,14,3
+Environment = Snow
+#-------------------------------
+[250]   # Galanthus Pokémon Center
+Name = Galanthus Pokémon Center
+MapPosition = 0,14,3
+#-------------------------------
+[251]   # Galanthus Town Gym
+Name = Galanthus Town Gym
+MapPosition = 0,14,3
+#-------------------------------
+[252]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[253]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[254]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[255]   # Galanthus Town
+Name = Galanthus Town
+Outdoor = false
+MapPosition = 0,14,3
+#-------------------------------
+[256]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[257]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[258]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[259]   # PokéMart
+Name = PokéMart
+MapPosition = 0,14,3
+#-------------------------------
+[260]   # Galanthus Town
+Name = Galanthus Town
+MapPosition = 0,14,3
+#-------------------------------
+[261]   # Route I
+Name = Route I
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,100
+MapPosition = 0,14,2
+Environment = Snow
+#-------------------------------
+[262]   # Galanthus Ice Cave 1F (L)
+Name = Galanthus Ice Cave 1F (L)
+Bicycle = true
+MapPosition = 0,14,2
+Environment = Cave
+#-------------------------------
+[263]   # Galanthus Ice Cave 2F
+Name = Galanthus Ice Cave 2F
+Bicycle = true
+MapPosition = 0,14,2
+Environment = Cave
+#-------------------------------
+[264]   # Galanthus Ice Cave 1F (R)
+Name = Galanthus Ice Cave 1F (R)
+Bicycle = true
+MapPosition = 0,14,2
+Environment = Cave
+#-------------------------------
+[265]   # Galanthus Ice Cave BF1
+Name = Galanthus Ice Cave BF1
+Bicycle = true
+MapPosition = 0,14,2
+Environment = Cave
+#-------------------------------
+[266]   # Route J
+Name = Route J
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Snow,100
+MapPosition = 0,14,1
+Environment = Snow
+#-------------------------------
+[267]   # The Dojo
+Name = The Dojo
+ShowArea = false
+Bicycle = false
+MapPosition = 0,14,1
+#-------------------------------
+[268]   # Pokémon Tower
+Name = Pokémon Tower
+ShowArea = false
+MapPosition = 0,14,1
+#-------------------------------
+[271]   # Route E
+Name = Route E
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,18
+#-------------------------------
+[272]   # Route E
+Name = Route E
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,16
+Environment = MovingWater
+#-------------------------------
+[274]   # North Route K
+Name = North Route K
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,4
+#-------------------------------
+[275]   # South Route K
+Name = South Route K
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,16,7
+#-------------------------------
+[279]   # Fallugia City
+Name = Fallugia City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 279,68,49
+MapPosition = 0,22,4
+#-------------------------------
+[280]   # Fallugia Pokémon Center
+Name = Fallugia Pokémon Center
+MapPosition = 0,20,4
+#-------------------------------
+[281]   # Retirement Home
+Name = Retirement Home
+MapPosition = 0,20,4
+#-------------------------------
+[282]   # Pokemon Ranger Extension
+Name = Pokemon Ranger Extension
+MapPosition = 0,20,4
+#-------------------------------
+[283]   # PokéMart
+Name = PokéMart
+MapPosition = 0,20,4
+#-------------------------------
+[284]   # Falliugia City Gym
+Name = Falliugia City Gym
+MapPosition = 0,20,4
+Environment = Volcano
+#-------------------------------
+[285]   # Fallugia City
+Name = Fallugia City
+MapPosition = 0,20,4
+#-------------------------------
+[286]   # Fallugia City
+Name = Fallugia City
+MapPosition = 0,20,4
+#-------------------------------
+[287]   # Fallugia City
+Name = Fallugia City
+MapPosition = 0,20,4
+#-------------------------------
+[288]   # Fallugia City
+Name = Fallugia City
+MapPosition = 0,20,4
+#-------------------------------
+[289]   # Route L
+Name = Route L
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,100
+MapPosition = 0,20,7
+#-------------------------------
+[290]   # Retirement Home
+Name = Retirement Home
+MapPosition = 0,20,4
+#-------------------------------
+[291]   # Fallugia Forest
+Name = Fallugia Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,20,6
+Environment = Forest
+#-------------------------------
+[292]   # Fallugia Forest Gate
+Name = Fallugia Forest Gate
+MapPosition = 0,20,6
+#-------------------------------
+[293]   # Fallugia Forest Castle
+Name = Fallugia Forest Castle
+MapPosition = 0,20,5
+#-------------------------------
+[294]   # Fallugia Forest Castle
+Name = Fallugia Forest Castle
+MapPosition = 0,20,6
+#-------------------------------
+[295]   # Fallugia Forest Castle
+Name = Fallugia Forest Castle
+MapPosition = 0,20,5
+#-------------------------------
+[296]   # Fallugia Forest
+Name = Fallugia Forest
+MapPosition = 0,20,5
+#-------------------------------
+[297]   # Route L
+Name = Route L
+MapPosition = 0,20,7
+#-------------------------------
+[298]   # Route L Lab
+Name = Route L Lab
+MapPosition = 0,20,7
+#-------------------------------
+[299]   # Crystal Pass
+Name = Crystal Pass
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[300]   # Crystal Pass
+Name = Crystal Pass
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[301]   # Crystal Pass
+Name = Crystal Pass
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[302]   # Crystal Pass
+Name = Crystal Pass
+Outdoor = false
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[303]   # Route M
+Name = Route M
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,22,9
+Environment = Grass
+#-------------------------------
+[310]   # Underground Marigold
+Name = Underground Marigold
+Outdoor = false
+Bicycle = true
+MapPosition = 0,8,3
+Environment = Cave
+#-------------------------------
+[311]   # Blight Underground Base Cells
+Name = Blight Underground Base Cells
+MapPosition = 0,8,3
+#-------------------------------
+[312]   # Blight Underground Base Hall
+Name = Blight Underground Base Hall
+MapPosition = 0,8,3
+#-------------------------------
+[313]   # Blight Underground Base
+Name = Blight Underground Base
+MapPosition = 0,8,3
+#-------------------------------
+[314]   # Leena's Fashion Industry 6F
+Name = Leena's Fashion Industry 6F
+MapPosition = 0,8,3
+#-------------------------------
+[315]   # Marigold City Gym
+Name = Marigold City Gym
+MapPosition = 0,8,3
+#-------------------------------
+[316]   # Leena's Fashion Industry 6F
+Name = Leena's Fashion Industry 6F
+MapPosition = 0,8,3
+#-------------------------------
+[317]   # Leena's Fashion Industry 4F
+Name = Leena's Fashion Industry 4F
+MapPosition = 0,8,3
+#-------------------------------
+[318]   # Avit's Lab: Back Room
+Name = Avit's Lab: Back Room
+MapPosition = 0,14,16
+#-------------------------------
+[319]   # Avit's Lab: Underground
+Name = Avit's Lab: Underground
+MapPosition = 0,14,16
+#-------------------------------
+[320]   # Avit's Lab: Main Room
+Name = Avit's Lab: Main Room
+MapPosition = 0,14,16
+#-------------------------------
+[326]   # Magnolia City
+Name = Magnolia City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,24,9
+#-------------------------------
+[327]   # Magnolia Pokémon Center
+Name = Magnolia Pokémon Center
+MapPosition = 0,24,9
+#-------------------------------
+[328]   # PokéMart
+Name = PokéMart
+MapPosition = 0,24,9
+#-------------------------------
+[329]   # Magnolia City
+Name = Magnolia City
+MapPosition = 0,24,9
+#-------------------------------
+[330]   # Magnolia City Hall
+Name = Magnolia City Hall
+MapPosition = 0,24,9
+#-------------------------------
+[331]   # Magnolia Mansion
+Name = Magnolia Mansion
+MapPosition = 0,24,9
+#-------------------------------
+[332]   # Magnolia University
+Name = Magnolia University
+MapPosition = 0,24,9
+#-------------------------------
+[333]   # Magnolia University 2F
+Name = Magnolia University 2F
+MapPosition = 0,24,9
+#-------------------------------
+[334]   # Magnolia City
+Name = Magnolia City
+MapPosition = 0,24,9
+#-------------------------------
+[335]   # Underground Magnolia
+Name = Underground Magnolia
+MapPosition = 0,24,9
+#-------------------------------
+[336]   # Underground Magnolia
+Name = Underground Magnolia
+MapPosition = 0,24,9
+#-------------------------------
+[337]   # Underground Magnolia
+Name = Underground Magnolia
+MapPosition = 0,24,9
+#-------------------------------
+[338]   # Magnolia City
+Name = Magnolia City
+MapPosition = 0,24,9
+#-------------------------------
+[339]   # Power Plant
+Name = Power Plant
+MapPosition = 0,24,9
+#-------------------------------
+[340]   # Power Plant Bunker
+Name = Power Plant Bunker
+MapPosition = 0,24,9
+#-------------------------------
+[341]   # Magnolia Warehouse
+Name = Magnolia Warehouse
+MapPosition = 0,24,9
+#-------------------------------
+[342]   # Magnolia City Gym
+Name = Magnolia City Gym
+MapPosition = 0,24,9
+#-------------------------------
+[343]   # Magnolia City Gym
+Name = Magnolia City Gym
+MapPosition = 0,24,9
+#-------------------------------
+[344]   # Magnolia City Café
+Name = Magnolia City Café
+MapPosition = 0,24,9
+#-------------------------------
+[345]   # Magnolia City
+Name = Magnolia City
+MapPosition = 0,24,9
+#-------------------------------
+[346]   # Magnolia City
+Name = Magnolia City
+MapPosition = 0,24,9
+#-------------------------------
+[347]   # Route N
+Name = Route N
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,24,10
+#-------------------------------
+[348]   # Route N Gate
+Name = Route N Gate
+Bicycle = true
+MapPosition = 0,24,10
+#-------------------------------
+[349]   # Magnolia City
+Name = Magnolia City
+Outdoor = false
+MapPosition = 0,24,9
+#-------------------------------
+[350]   # Magnolia City
+Name = Magnolia City
+MapPosition = 0,24,9
+#-------------------------------
+[351]   # Magnolia City
+Name = Magnolia City
+Outdoor = true
+MapPosition = 0,24,9
+#-------------------------------
+[352]   # Aster Desert
+Name = Aster Desert
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,0
+MapPosition = 0,21,9
+Environment = Sand
+#-------------------------------
+[354]   # Alstroemeria Mansion
+Name = Alstroemeria Mansion
+MapPosition = 0,4,5
+SnapEdges = false
+WildCaptureME = Alarm.ogg
+#-------------------------------
+[355]   # Aster Town
+Name = Aster Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,21,11
+#-------------------------------
+[356]   # Aster Town
+Name = Aster Town
+MapPosition = 0,21,11
+#-------------------------------
+[357]   # Aster Town
+Name = Aster Town
+MapPosition = 0,20,11
+#-------------------------------
+[358]   # Aster Town
+Name = Aster Town
+MapPosition = 0,20,11
+#-------------------------------
+[359]   # Aster Pokémon Center
+Name = Aster Pokémon Center
+MapPosition = 0,20,11
+#-------------------------------
+[360]   # PokéMart
+Name = PokéMart
+MapPosition = 0,20,11
+#-------------------------------
+[361]   # Aster Town Casino
+Name = Aster Town Casino
+MapPosition = 0,20,11
+#-------------------------------
+[362]   # Aster Town Gym
+Name = Aster Town Gym
+MapPosition = 0,20,11
+#-------------------------------
+[363]   # Aster Desert Gate
+Name = Aster Desert Gate
+MapPosition = 0,21,10
+#-------------------------------
+[365]   # Aster Town Gym
+Name = Aster Town Gym
+MapPosition = 0,20,11
+#-------------------------------
+[366]   # Aster Town Gym
+Name = Aster Town Gym
+MapPosition = 0,20,11
+#-------------------------------
+[367]   # Aster Town Gym
+Name = Aster Town Gym
+MapPosition = 0,20,11
+#-------------------------------
+[368]   # Aster Town
+Name = Aster Town
+MapPosition = 0,21,11
+#-------------------------------
+[369]   # Aster Desert Rest Spot
+Name = Aster Desert Rest Spot
+MapPosition = 0,19,9
+#-------------------------------
+[370]   # Red Aster Desert
+Name = Red Aster Desert
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,19,9
+Environment = Sand
+#-------------------------------
+[371]   # South Red Aster Desert
+Name = South Red Aster Desert
+Outdoor = true
+ShowArea = true
+Weather = Rain,0
+MapPosition = 0,19,10
+Environment = Sand
+#-------------------------------
+[372]   # Aster Desert Rest Spot
+Name = Aster Desert Rest Spot
+MapPosition = 0,19,10
+#-------------------------------
+[373]   # Aster Caves
+Name = Aster Caves
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,19,10
+Environment = Cave
+#-------------------------------
+[374]   # Cutscene
+Name = Cutscene
+MapPosition = 0,19,10
+Environment = Cave
+#-------------------------------
+[375]   # West Red Aster Desert
+Name = West Red Aster Desert
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,18,9
+#-------------------------------
+[376]   # Aster Desert Rest Spot
+Name = Aster Desert Rest Spot
+MapPosition = 0,19,9
+#-------------------------------
+[377]   # Aster Desert Gate
+Name = Aster Desert Gate
+Weather = Rain,0
+MapPosition = 0,20,9
+#-------------------------------
+[378]   # Aster Desert Rest Spot
+Name = Aster Desert Rest Spot
+MapPosition = 0,18,9
+#-------------------------------
+[379]   # Aster Caves
+Name = Aster Caves
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[380]   # Aster Caves
+Name = Aster Caves
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[382]   # Aster Caves
+Name = Aster Caves
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[383]   # Aster Caves
+Name = Aster Caves
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[384]   # Aster Caves
+Name = Aster Caves
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[385]   # Aster Caves
+Name = Aster Caves
+Bicycle = true
+MapPosition = 0,18,9
+Environment = Cave
+#-------------------------------
+[386]   # Aster Desert Labs
+Name = Aster Desert Labs
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Sandstorm,0
+MapPosition = 0,18,8
+#-------------------------------
+[387]   # Aster Desert Labs
+Name = Aster Desert Labs
+MapPosition = 0,18,8
+#-------------------------------
+[388]   # G.H Corporations 5th Floor
+Name = G.H Corporations 5th Floor
+#-------------------------------
+[390]   # Dark Caverns
+Name = Dark Aster Caverns
+MapPosition = 0,18,8
+Environment = Cave
+#-------------------------------
+[391]   # Aster Desert Labs
+Name = Aster Desert Labs
+MapPosition = 0,18,8
+#-------------------------------
+[392]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,17,14
+#-------------------------------
+[393]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,0
+MapPosition = 0,17,16
+DiveMap = 598
+#-------------------------------
+[394]   # Hidden Caves
+Name = Hidden Caves
+Bicycle = true
+MapPosition = 0,17,16
+#-------------------------------
+[395]   # Hidden Caves
+Name = Hidden Caves
+Bicycle = true
+MapPosition = 0,17,16
+#-------------------------------
+[396]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,18,17
+#-------------------------------
+[397]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,15
+DiveMap = 11
+#-------------------------------
+[398]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,23,14
+#-------------------------------
+[399]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,25,13
+#-------------------------------
+[400]   # Lobelia Island
+Name = Lobelia Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,25,14
+#-------------------------------
+[401]   # Lobelia Island
+Name = Lobelia Island
+MapPosition = 0,26,15
+#-------------------------------
+[402]   # Lobelia Island
+Name = Lobelia Island
+MapPosition = 0,26,15
+#-------------------------------
+[403]   # Lobelia Crossway
+Name = Lobelia Crossway
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 403,52,12
+MapPosition = 1,13,7
+#-------------------------------
+[404]   # Lobelia Crossway
+Name = Lobelia Crossway
+MapPosition = 1,13,5
+#-------------------------------
+[405]   # Lobelia Crossway Rest Area
+Name = Lobelia Crossway Rest Area
+MapPosition = 1,13,5
+#-------------------------------
+[406]   # Lobelia Crossway
+Name = Lobelia Crossway
+MapPosition = 1,13,6
+#-------------------------------
+[407]   # Lobelia Crossway Gate
+Name = Lobelia Crossway Gate
+MapPosition = 1,12,5
+#-------------------------------
+[408]   # Lobelia Crossway Gate
+Name = Lobelia Crossway Gate
+MapPosition = 1,13,11
+#-------------------------------
+[409]   # Route P
+Name = Route P
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,7
+#-------------------------------
+[410]   # Lobelia Village
+Name = Lobelia Village
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 410,25,96
+MapPosition = 1,15,11
+#-------------------------------
+[412]   # Route O
+Name = Route O
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[413]   # Lobelia Crossway
+Name = Lobelia Crossway
+MapPosition = 1,13,9
+#-------------------------------
+[414]   # Lobelia Village Inn
+Name = Lobelia Village Inn
+MapPosition = 1,15,11
+#-------------------------------
+[415]   # Lobelia Village
+Name = Lobelia Village
+MapPosition = 1,15,11
+#-------------------------------
+[416]   # Fujisaki Family House
+Name = Fujisaki Family House
+MapPosition = 1,15,11
+#-------------------------------
+[417]   # Fujisaki Family House: 2F
+Name = Fujisaki Family House: 2F
+MapPosition = 1,15,11
+#-------------------------------
+[418]   # Fujisaki Family Shop
+Name = Fujisaki Family Shop
+MapPosition = 1,15,11
+#-------------------------------
+[419]   # Fujisaki Family House: 3F
+Name = Fujisaki Family House: 3F
+MapPosition = 1,15,11
+#-------------------------------
+[420]   # Fujisaki Family Room
+Name = Fujisaki Family Room
+MapPosition = 1,15,11
+#-------------------------------
+[421]   # Ancient Shrine
+Name = Ancient Shrine
+MapPosition = 1,15,11
+#-------------------------------
+[422]   # Ancient Shrine B1F
+Name = Ancient Shrine B1F
+MapPosition = 1,15,11
+#-------------------------------
+[423]   # Ancient Shrine B2F
+Name = Ancient Shrine B2F
+MapPosition = 1,15,11
+#-------------------------------
+[424]   # Ancient Shrine: Main Room
+Name = Ancient Shrine: Main Room
+MapPosition = 1,15,11
+#-------------------------------
+[426]   # Forest Temple
+Name = Forest Temple
+Outdoor = true
+#-------------------------------
+[427]   # Forest Temple 2F
+Name = Forest Temple 2F
+Outdoor = true
+#-------------------------------
+[428]   # Forest Temple 3F
+Name = Forest Temple 3F
+Outdoor = true
+#-------------------------------
+[429]   # Forest Temple
+Name = Forest Temple
+Outdoor = true
+#-------------------------------
+[430]   # Forest Temple
+Name = Forest Temple
+Outdoor = true
+#-------------------------------
+[431]   # Forest Temple
+Name = Forest Temple
+Outdoor = false
+#-------------------------------
+[432]   # Forest Temple
+Name = Forest Temple
+Outdoor = true
+#-------------------------------
+[433]   # Forest Temple
+Name = Forest Temple
+Outdoor = true
+#-------------------------------
+[434]   # P-Mobile Phone Store
+Name = P-Mobile Phone Store
+MapPosition = 0,4,5
+#-------------------------------
+[435]   # Alstroemeria City
+Name = Alstroemeria City
+MapPosition = 0,4,5
+#-------------------------------
+[436]   # Alstroemeria City
+Name = Alstroemeria City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 436,28,57
+Weather = Rain,50
+MapPosition = 0,4,5
+#-------------------------------
+[437]   # Alstroemeria Pokémon Center
+Name = Alstroemeria Pokémon Center
+MapPosition = 0,4,5
+#-------------------------------
+[438]   # Alstroemeria City
+Name = Alstroemeria City
+MapPosition = 0,4,5
+#-------------------------------
+[439]   # Astral Night Club
+Name = Astral Night Club
+MapPosition = 0,4,5
+#-------------------------------
+[440]   # Astral Night Club: Main Floor
+Name = Astral Night Club: Main Floor
+MapPosition = 0,4,5
+#-------------------------------
+[441]   # Alstral Night Club Backroom
+Name = Alstral Night Club Backroom
+MapPosition = 0,4,5
+#-------------------------------
+[442]   # Eclipse's Room
+Name = Eclipse's Room
+MapPosition = 0,4,5
+#-------------------------------
+[444]   # Astral Night Club: VIP Room
+Name = Astral Night Club: VIP Room
+MapPosition = 0,4,5
+#-------------------------------
+[445]   # Rorter's Room
+Name = Rorter's Room
+MapPosition = 0,4,5
+#-------------------------------
+[446]   # Route P Gate
+Name = Route P Gate
+MapPosition = 0,5,5
+#-------------------------------
+[447]   # Alstroemeria City
+Name = Alstroemeria City
+MapPosition = 0,4,5
+#-------------------------------
+[448]   # Shiro's Lab
+Name = Alstroemeria City
+MapPosition = 0,4,5
+#-------------------------------
+[449]   # Route P
+Name = Route P
+MapPosition = 0,6,6
+#-------------------------------
+[450]   # Route P
+Name = Route P
+MapPosition = 0,6,5
+#-------------------------------
+[451]   # Route P
+Name = Route P
+MapPosition = 0,6,5
+#-------------------------------
+[452]   # Underground Route P
+Name = Underground Route P
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,5
+#-------------------------------
+[453]   # Route P
+Name = Route P
+MapPosition = 0,6,5
+#-------------------------------
+[454]   # Blight Underground Labs
+Name = Blight Underground Labs
+MapPosition = 0,6,5
+#-------------------------------
+[455]   # Blight Underground Labs: Inner
+Name = Blight Underground Labs: Inner
+MapPosition = 0,6,5
+#-------------------------------
+[456]   # Blight Underground Labs
+Name = Blight Underground Labs
+MapPosition = 0,6,5
+#-------------------------------
+[457]   # Blight Underground Labs
+Name = Blight Underground Labs
+MapPosition = 0,6,5
+#-------------------------------
+[458]   # ???
+Name = ???
+MapPosition = 0,6,5
+#-------------------------------
+[459]   # Blight Underground Labs
+Name = Blight Underground Labs
+MapPosition = 0,6,5
+#-------------------------------
+[460]   # Blight Underground Labs
+Name = Blight Underground Labs
+MapPosition = 0,6,5
+#-------------------------------
+[461]   # Blight Underground Labs
+Name = Blight Underground Labs
+MapPosition = 0,6,5
+#-------------------------------
+[463]   # Fujisaki Family Gym
+Name = Fujisaki Family Gym
+MapPosition = 1,15,11
+#-------------------------------
+[464]   # Paeonia City
+Name = Paeonia City
+DarkMap = true
+#-------------------------------
+[465]   # ????????
+Name = ????????
+MapPosition = 0,16,9
+DarkMap = true
+#-------------------------------
+[466]   # ????????
+Name = ????????
+Outdoor = false
+MapPosition = 0,16,9
+DarkMap = true
+#-------------------------------
+[467]   # ????????
+Name = ????????
+MapPosition = 0,16,9
+DarkMap = true
+#-------------------------------
+[472]   # Passiflora Mountain Path
+Name = Passiflora Mountain Path
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,22,2
+#-------------------------------
+[473]   # Passiflora Mountain Path
+Name = Passiflora Mountain Path
+Outdoor = true
+ShowArea = true
+MapPosition = 0,22,3
+DiveMap = 19
+#-------------------------------
+[474]   # Passiflora Mountain Gate
+Name = Passiflora Mountain Gate
+Bicycle = true
+MapPosition = 0,22,4
+#-------------------------------
+[475]   # Passiflora Mountains
+Name = Passiflora Mountains
+MapPosition = 0,22,2
+#-------------------------------
+[476]   # Passiflora Mountain 2F
+Name = Passiflora Mountain 2F
+MapPosition = 0,22,2
+#-------------------------------
+[477]   # Passiflora Mountain 3F
+Name = Passiflora Mountain 3F
+MapPosition = 0,22,2
+#-------------------------------
+[478]   # Passiflora Mountains 4F
+Name = Passiflora Mountains 4F
+MapPosition = 0,22,2
+#-------------------------------
+[479]   # Passiflora Mountain 5F
+Name = Passiflora Mountain 5F
+MapPosition = 0,22,3
+#-------------------------------
+[480]   # Passiflora Valley
+Name = Passiflora Valley
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Fog,100
+MapPosition = 0,22,2
+#-------------------------------
+[481]   # Passiflora Mountain Peak
+Name = Passiflora Mountain Peak
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,22,1
+Environment = Volcano
+#-------------------------------
+[483]   # Underground Marigold
+Name = Underground Marigold
+MapPosition = 0,8,3
+#-------------------------------
+[484]   # Underground Marigold
+Name = Underground Marigold
+MapPosition = 0,8,3
+#-------------------------------
+[485]   # Leena's Fashion Industry B1F
+Name = Leena's Fashion Industry B1F
+MapPosition = 0,8,3
+#-------------------------------
+[486]   # Leena's Fashion Industry 12F
+Name = Leena's Fashion Industry 12F
+MapPosition = 0,8,3
+#-------------------------------
+[487]   # Leena's Fashion Industry 12F
+Name = Leena's Fashion Industry 12F
+MapPosition = 0,8,3
+#-------------------------------
+[488]   # Leena's Fashion Industry 12F
+Name = Leena's Fashion Industry 12F
+MapPosition = 0,8,3
+#-------------------------------
+[489]   # Leena's Fashion Industry 13F
+Name = Leena's Fashion Industry 13F
+MapPosition = 0,8,3
+#-------------------------------
+[490]   # Leena's Fashion Industry 13F
+Name = Leena's Fashion Industry 13F
+MapPosition = 0,8,3
+#-------------------------------
+[491]   # Leena's Fashion Industry 13F
+Name = Leena's Fashion Industry 13F
+MapPosition = 0,8,3
+#-------------------------------
+[492]   # Leena's Fashion Industry 14F
+Name = Leena's Fashion Industry 14F
+MapPosition = 0,8,3
+#-------------------------------
+[493]   # Leena's Fashion Industry 15F
+Name = Leena's Fashion Industry 15F
+MapPosition = 0,8,3
+#-------------------------------
+[494]   # Leena's Fashion Industry 16F
+Name = Leena's Fashion Industry 16F
+MapPosition = 0,8,3
+#-------------------------------
+[496]   # G.H. Corporations B1F
+Name = G.H. Corporations B1F
+MapPosition = 0,16,9
+#-------------------------------
+[497]   # G.H Corporations 13F
+Name = G.H Corporations 13F
+MapPosition = 0,16,9
+#-------------------------------
+[498]   # G.H. Corporations 14F
+Name = G.H. Corporations 14F
+MapPosition = 0,16,9
+#-------------------------------
+[499]   # G.H. Corporations 14F
+Name = G.H. Corporations 14F
+MapPosition = 0,16,9
+#-------------------------------
+[500]   # G.H. Corporations 15F
+Name = G.H. Corporations 15F
+MapPosition = 0,16,9
+#-------------------------------
+[501]   # G.H. Corporations 15F
+Name = G.H. Corporations 15F
+MapPosition = 0,16,9
+#-------------------------------
+[502]   # G.H. Corporations 15F
+Name = G.H. Corporations 15F
+MapPosition = 0,16,9
+#-------------------------------
+[503]   # G.H. Corporations 15F
+Name = G.H. Corporations 15F
+MapPosition = 0,16,9
+#-------------------------------
+[504]   # G.H. Corporations 15F
+Name = G.H. Corporations 15F
+MapPosition = 0,16,9
+#-------------------------------
+[505]   # Admin Quarters
+Name = Admin Quarters
+MapPosition = 0,16,9
+#-------------------------------
+[506]   # Alstroemeria City Gym
+Name = Alstroemeria City Gym
+MapPosition = 0,4,5
+#-------------------------------
+[507]   # Alstroemeria City Gym
+Name = Alstroemeria City Gym
+MapPosition = 0,4,5
+#-------------------------------
+[508]   # Route Q
+Name = Route Q
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,24,4
+#-------------------------------
+[509]   # Route Q Gate
+Name = Route Q Gate
+MapPosition = 0,24,4
+#-------------------------------
+[510]   # Victory Road
+Name = Victory Road
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,26,2
+#-------------------------------
+[511]   # Victory Road
+Name = Victory Road
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,26,2
+#-------------------------------
+[512]   # Pokémon League
+Name = Pokémon League
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,26,1
+#-------------------------------
+[514]   # Helianthus Town (Past)
+Name = Helianthus Town (Past)
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[517]   # Route A (Past)
+Name = Route A (Past)
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[518]   # Lillium Town (Past)
+Name = Lillium Town (Past)
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[523]   # Route B (Past)
+Name = Route B (Past)
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[525]   # Hokkaido Mountain Peak (Past)
+Name = Hokkaido Mountain Peak (Past)
+Outdoor = true
+Weather = Snow,100
+#-------------------------------
+[529]   # Safari Zone: Grasslands
+Name = Safari Zone: Grasslands
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,10
+SafariMap = true
+#-------------------------------
+[530]   # Safari Zone: Forest
+Name = Safari Zone: Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,10
+SafariMap = true
+#-------------------------------
+[531]   # Safari Zone: Swamp
+Name = Safari Zone: Swamp
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,100
+MapPosition = 0,4,10
+SafariMap = true
+#-------------------------------
+[532]   # Safari Zone: Snow
+Name = Safari Zone: Snow
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,10
+SafariMap = true
+#-------------------------------
+[533]   # Safari Zone: Orange Grasslands
+Name = Safari Zone: Orange Grasslands
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,4,10
+SafariMap = true
+#-------------------------------
+[534]   # Marigold City
+Name = Marigold City
+MapPosition = 0,8,3
+#-------------------------------
+[535]   # Marigold City
+Name = Marigold City
+Outdoor = false
+MapPosition = 0,8,3
+DarkMap = true
+#-------------------------------
+[536]   # Dark Caves 1F
+Name = Dark Caves 1F
+Outdoor = false
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,4
+DarkMap = true
+#-------------------------------
+[537]   # Dark Caves 2F
+Name = Dark Caves 2F
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,4
+DarkMap = true
+#-------------------------------
+[538]   # Dark Caves 3F
+Name = Dark Caves 3F
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,4
+DarkMap = true
+#-------------------------------
+[539]   # Dark Caves 4F
+Name = Dark Caves 4F
+ShowArea = true
+Bicycle = true
+MapPosition = 0,12,4
+DarkMap = true
+#-------------------------------
+[540]   # Dark Caves Clearing
+Name = Dark Caves Clearing
+MapPosition = 0,12,4
+#-------------------------------
+[543]   # Secret Room
+Name = Secret Room
+MapPosition = 0,20,5
+#-------------------------------
+[544]   # Crystal Cavern Pits
+Name = Crystal Cavern Pits
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[545]   # Crystal Cavern Clearing
+Name = Crystal Cavern Clearing
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[548]   # Dianthus Walkway
+Name = Dianthus Walkway
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 1,17,12
+#-------------------------------
+[550]   # Dianthus Walkway Gate
+Name = Dianthus Walkway Gate
+MapPosition = 1,17,11
+#-------------------------------
+[551]   # Dianthus Walkway Rest Area
+Name = Dianthus Walkway Rest Area
+MapPosition = 1,17,12
+#-------------------------------
+[552]   # Dianthus Walkway
+Name = Dianthus Walkway
+MapPosition = 1,17,12
+#-------------------------------
+[553]   # Dianthus Caves
+Name = Dianthus Caves
+MapPosition = 1,17,12
+#-------------------------------
+[554]   # Dianthus Forest
+Name = Dianthus Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 1,17,14
+#-------------------------------
+[556]   # Dianthus Greenery
+Name = Dianthus Greenery
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 1,20,14
+#-------------------------------
+[557]   # Dianthus Greenery Gate
+Name = Dianthus Greenery Gate
+MapPosition = 1,19,14
+#-------------------------------
+[558]   # Yaopon Road
+Name = Yaopon Road
+MapPosition = 1,20,14
+#-------------------------------
+[559]   # Dianthus Greenery
+Name = Dianthus Greenery
+MapPosition = 1,20,14
+#-------------------------------
+[560]   # Dianthus Greenery
+Name = Dianthus Greenery
+MapPosition = 1,20,14
+#-------------------------------
+[561]   # Yaopon Town
+Name = Yaopon Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 1,22,14
+#-------------------------------
+[566]   # Crystal Cavern Clearing
+Name = Crystal Cavern Clearing
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[568]   # Dianthus Greenery Gate
+Name = Dianthus Greenery Gate
+MapPosition = 1,21,14
+#-------------------------------
+[571]   # Dianthus City
+Name = Dianthus City
+Name = 
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,45
+MapPosition = 1,20,12
+#-------------------------------
+[573]   # Endless Isles: Preliminary
+Name = Endless Isles: Preliminary
+Name = 
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[574]   # Endless Isles Harbor
+Name = Endless Isles Harbor
+#-------------------------------
+[575]   # Rookie Isle II
+Name = Rookie Isle II
+Name = 
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[576]   #  Rookie - Expert
+Name = Rookie - Expert
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[577]   # Expert Isle I
+Name = Expert Isle I
+Name = 
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[578]   # Expert Isle II
+Name = Expert Isle II
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[579]   # Expert - Pro
+Name = Expert - Pro
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[580]   # Crystal Pass
+Name = Crystal Pass
+Bicycle = true
+MapPosition = 0,22,7
+Environment = Cave
+#-------------------------------
+[581]   # Blight Mountain Base 2F
+Name = Blight Mountain Base 2F
+MapPosition = 0,2,18
+#-------------------------------
+[582]   # Pro Isle I
+Name = Pro Isle I
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[583]   # Pro Isle II
+Name = Pro Isle II
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[584]   # Pro - Master
+Name = Pro - Master
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[594]   # Master Isles I
+Name = Master Isles I
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Environment = Volcano
+#-------------------------------
+[595]   # Master - Legend
+Name = Master - Legend
+Outdoor = true
+ShowArea = true
+Environment = Volcano
+#-------------------------------
+[596]   # Legend Isles Cove I
+Name = Legend Isles Cove I
+ShowArea = true
+Environment = Cave
+#-------------------------------
+[598]   # Route O: Underwater
+Name = Route O: Underwater
+MapPosition = 0,17,16
+DiveMap = 598
+Environment = Underwater

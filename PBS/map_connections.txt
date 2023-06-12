@@ -1,0 +1,114 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# - (43) - Greenleaf Orphanage (42)
+43,E,0,42,W,0
+# Lillium Ranch (88) - Route O (392)
+88,E,19,392,W,0
+# North Route C (136) - Syringa Town (141)
+136,W,78,141,E,0
+# South Route C (137) - North Route C (136)
+137,N,0,136,S,0
+# Route D (151) - North Route C (136)
+151,E,0,136,W,0
+# Route P (409) - North Route C (136)
+409,S,87,136,N,0
+# South Route C (137) - Syringa Town (141)
+137,W,8,141,E,0
+# Route E (272) - South Route C (137)
+272,N,78,137,S,0
+# Route D (151) - South Route C (137)
+151,E,70,137,W,0
+# Syringa Town (141) - Route E (153)
+141,W,6,153,E,0
+# Route E (272) - Syringa Town (141)
+272,N,0,141,S,0
+# Route E (160) - Syringa Town (141)
+160,E,0,141,W,91
+# Ixora Island (166) - Syringa Town (141)
+166,E,0,141,W,144
+# Route D (151) - Syringa Town (141)
+151,S,0,141,N,1
+# Route P (409) - Route D (151)
+409,S,10,151,N,0
+# Route E (153) - Route E (271)
+153,E,168,271,W,0
+# Route E (272) - Route E (153)
+272,W,0,153,E,88
+# Route E (160) - Route E (153)
+160,N,0,153,S,0
+# Route E (156) - Route E (153)
+156,E,0,153,W,4
+# Route E (157) - Route E (153)
+157,N,65,153,S,0
+# Route E (156) - Route E (160)
+156,E,81,160,W,0
+# Route E (157) - Route E (156)
+157,N,0,156,S,0
+# Route E (157) - Route E (160)
+157,E,0,160,W,0
+# Route E (160) - Route E (271)
+160,E,83,271,W,0
+# Route E (160) - Route E (272)
+160,E,3,272,W,0
+# Ixora Island (166) - Route E (271)
+166,E,30,271,W,0
+# Ixora Island (166) - Route E (272)
+166,E,0,272,W,50
+# Route H (236) - Route G (208)
+236,W,0,208,E,22
+# Galanthus Town (249) - Route I (261)
+249,N,3,261,S,0
+# Route J (266) - Route I (261)
+266,S,0,261,N,10
+# Route E (272) - Route E (271)
+272,S,0,271,N,0
+# South Route K (275) - North Route K (274)
+275,N,0,274,S,10
+# Route N (347) - Route O (398)
+347,S,0,398,N,80
+# Route N (347) - Route O (399)
+347,W,65,399,E,0
+# Aster Desert (352) - Red Aster Desert (370)
+352,W,0,370,E,29
+# South Red Aster Desert (371) - Aster Desert (352)
+371,E,0,352,W,66
+# Red Aster Desert (370) - West Red Aster Desert (375)
+370,W,20,375,E,0
+# South Red Aster Desert (371) - Red Aster Desert (370)
+371,N,0,370,S,0
+# South Red Aster Desert (371) - West Red Aster Desert (375)
+371,W,0,375,E,75
+# Route O (392) - Route O (393)
+392,S,69,393,N,0
+# Route O (396) - Route O (393)
+396,W,0,393,E,17
+# Route O (397) - Route O (396)
+397,S,0,396,N,68
+# Lobelia Island (400) - Route O (396)
+400,S,0,396,N,131
+# Route O (398) - Route O (397)
+398,S,0,397,N,3
+# Lobelia Island (400) - Route O (397)
+400,W,45,397,E,0
+# Route O (412) - Route O (397)
+412,W,85,397,E,0
+# Lobelia Island (400) - Route O (398)
+400,W,0,398,E,45
+# Route O (412) - Route O (398)
+412,W,0,398,E,5
+# Route O (399) - Route O (398)
+399,S,0,398,N,0
+# Route O (412) - Lobelia Island (400)
+412,S,0,400,N,0
+# Passiflora Mountain Path (472) - Passiflora Mountain Path (473)
+472,S,0,473,N,0
+# Lillium Town (Past) (518) - Route A (Past) (517)
+518,4,39,517,0,0
+# Expert - Pro (579) - Pro Isle I (582)
+579,N,0,582,S,0
+# Pro Isle I (582) - Pro Isle II (583)
+582,N,0,583,S,0
+# Pro Isle II (583) - Pro - Master (584)
+583,N,1,584,S,0
+# Master Isles I (594) - Master - Legend (595)
+594,N,19,595,S,0
