@@ -1193,7 +1193,8 @@ Name = King's Rock
 NamePlural = King's Rocks
 Pocket = 1
 Price = 5000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_30, EvolutionStone
 Description = An item to be held by a Pokémon. When the holder inflicts damage, the target may flinch.
 #-------------------------------
 [RAZORFANG]
@@ -1549,7 +1550,8 @@ NamePlural = Metal Coats
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_30, EvolutionStone
 Description = An item to be held by a Pokémon. It is a special metallic film that ups the power of Steel-type moves.
 #-------------------------------
 [SILKSCARF]
@@ -1919,7 +1921,8 @@ Name = Deep Sea Tooth
 NamePlural = Deep Sea Teeth
 Pocket = 1
 Price = 2000
-Flags = Fling_90
+FieldUse = OnPokemon
+Flags = Fling_90, EvolutionStone
 Description = An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat.
 #-------------------------------
 [DEEPSEASCALE]
@@ -1927,7 +1930,8 @@ Name = Deep Sea Scale
 NamePlural = Deep Sea Scales
 Pocket = 1
 Price = 2000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_30, EvolutionStone
 Description = An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat.
 #-------------------------------
 [ADAMANTORB]
@@ -2153,7 +2157,8 @@ NamePlural = Dragon Scales
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_30, EvolutionStone
 Description = A thick and tough scale. Dragon-type Pokémon may be holding this item when caught.
 #-------------------------------
 [UPGRADE]
@@ -2162,7 +2167,8 @@ NamePlural = Upgrades
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_30, EvolutionStone
 Description = A transparent device filled with all sorts of data. It was produced by Silph Co.
 #-------------------------------
 [DUBIOUSDISC]
@@ -2171,7 +2177,8 @@ NamePlural = Dubious Discs
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_50
+FieldUse = OnPokemon
+Flags = Fling_50, EvolutionStone
 Description = A transparent device overflowing with dubious data.  Its producer is unknown.
 #-------------------------------
 [PROTECTOR]
@@ -2180,7 +2187,8 @@ NamePlural = Protectors
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80, EvolutionStone
 Description = A protective item of some sort. It is extremely stiff and heavy. It is loved by a certain Pokémon.
 #-------------------------------
 [ELECTIRIZER]
@@ -2189,7 +2197,8 @@ NamePlural = Electirizers
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80, EvolutionStone
 Description = A box packed with a tremendous amount of electric energy. It is loved by a certain Pokémon.
 #-------------------------------
 [MAGMARIZER]
@@ -2198,7 +2207,8 @@ NamePlural = Magmarizers
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80, EvolutionStone
 Description = A box packed with a tremendous amount of magma energy. It is loved by a certain Pokémon.
 #-------------------------------
 [REAPERCLOTH]
@@ -2207,7 +2217,8 @@ NamePlural = Reaper Cloths
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_10
+FieldUse = OnPokemon
+Flags = Fling_10, EvolutionStone
 Description = A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon.
 #-------------------------------
 [PRISMSCALE]
@@ -2216,7 +2227,8 @@ NamePlural = Prism Scales
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_30, EvolutionStone
 Description = A mysterious scale that evolves certain Pokémon. It shines in rainbow colors.
 #-------------------------------
 [OVALSTONE]
@@ -2234,7 +2246,8 @@ NamePlural = Whipped Dreams
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80, EvolutionStone
 Description = A soft and sweet treat made of fluffy, puffy and whirled cream. It's loved by a certain Pokémon.
 #-------------------------------
 [SACHET]
@@ -2243,7 +2256,8 @@ NamePlural = Sachets
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80, EvolutionStone
 Description = A sachet filled with slightly overwhelming fragrant perfumes. Yet it's loved by a certain Pokémon.
 #-------------------------------
 [STRAWBERRYSWEET]
