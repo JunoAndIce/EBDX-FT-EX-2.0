@@ -26,7 +26,7 @@ class PokemonPokedexInfo_Scene
     @sprites["formfront"].constrict(200) if @sprites["formfront"]
     if @sprites["formback"]
       @sprites["formback"].constrict(200)
-      @sprites["formback"].setOffset(PictureOrigin::Center)
+      @sprites["formback"].setOffset(PictureOrigin::CENTER)
       @sprites["formback"].y = @sprites["formfront"].y if @sprites["formfront"]
     end
   end
