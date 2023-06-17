@@ -11,10 +11,10 @@ BattleVS         = flamesSM
 [RIVAL1,Blue,2]
 BattleVS         = wavesSM
 #-------------------------------
-[LEADER_Brock]
+[LEADER_Garrison]
 TrainerPositionX = -8
 BattleVS         = integratedVS
-BattleScript     = BROCK
+BattleScript     = GARRISON
 #-------------------------------
 [TEAMROCKET_M]
 BattleIntro      = evilTeam
