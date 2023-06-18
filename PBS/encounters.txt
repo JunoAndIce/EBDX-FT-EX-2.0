@@ -4,27 +4,27 @@
 Land,21
     20,CATERPIE,3,4
     20,WEEDLE,2,3
-    10,NIDORANfE,3,4
-    10,NIDORANmA,3,4
-    10,PIDGEY,2,3
-    10,WOOLOO,2,4
-    5,SENTRET,4
-    5,SPINARAK,3
-    4,HOPPIP,3,4
+    10,TAROUNTULA,2,3
+    10,HOPPIP,2,4
+    10,SENTRET,4
+    10,SPINARAK,3
+	5,NIDORANfE,3,4
+    5,NIDORANmA,3,4
+    4,WOOLOO,3,4
     4,PURRLOIN,3,4
     3,BUNNELBY,2,4
-    3,STARLY,3,4
+    3,LECHONK,3,4
 #-------------------------------
 [088] # Lillium Ranch
 Land,21
-    20,ODDISH,6,7
+    20,TAILLOW,5,6
     20,SPEAROW,5
-    10,COTTONEE,6,8
-    10,EKANS,6
-    10,PETILIL,6,8
-    10,SUNKERN,6,7
-    5,HOOTHOOT,7
-    5,TAILLOW,5
+    10,COTTONEE,6,7
+    10,SMOLIV,6
+    10,PETILIL,6,7
+    10,SUNKERN,6
+    5,BELLSPROUT,6
+    5,ODDISH,6
     4,GOSSIFLEUR,7
     4,MINCCINO,6,7
     3,CUTIEFLY,6
@@ -63,6 +63,21 @@ Land,21
     4,SURSKIT,9
     3,CHEWTLE,8,9
     3,FOMANTIS,9
+#-------------------------------
+[105] # Lillium Forest
+Land,21
+    20,KAKUNA,7,8
+    20,METAPOD,6,8
+    10,SILCOON,7,8
+    10,CASCOON,9
+    10,DOTTLER,7,9
+    10,SPEWPA,7,8
+    5,BURMY,8,9
+    5,COMBEE,9
+    4,SHROOMISH,7,9
+    4,BUDEW,6,8
+    3,SEWADDLE,8,9
+    3,NYMBLE,9
 #-------------------------------
 [114] # Paeonia Park
 Land,25
@@ -667,7 +682,7 @@ SuperRod
 #-------------------------------
 [208] # Route G
 Land,21
-    20,BUDEW,30
+    20,CAPSAKID,30
     20,CHERUBI,27,29
     10,FLETCHLING,26,29
     10,FOONGUS,28,29
@@ -1821,7 +1836,7 @@ Cave,5
 #-------------------------------
 [529] # Safari Zone: Grasslands
 Land,25
-    20,BELLSPROUT,32
+    20,EKANS,32
     20,SLAKOTH,26,28
     10,CHERUBI,30
     10,MUNNA,30,32

@@ -192,6 +192,10 @@ Environment = Cave
 Name = Swamp Shrine
 MapPosition = 0,4,9
 #-------------------------------
+[032]   # Lillium City Gym
+Name = Lillium City Gym
+MapPosition = 0,14,12
+#-------------------------------
 [038]   # Route D
 Name = Route D
 Outdoor = false
@@ -212,7 +216,7 @@ Bicycle = true
 HealingSpot = 42,27,13
 MapPosition = 0,11,16
 #-------------------------------
-[043]   # -
+[043]   # Lillium Ranch Lab
 Name = -
 Outdoor = true
 ShowArea = false
@@ -236,7 +240,7 @@ Name = Cycling Road gate
 Bicycle = true
 MapPosition = 0,12,6
 #-------------------------------
-[047]
+[047]   # MAP047
 Name = Route 7
 Outdoor = true
 ShowArea = true
@@ -506,15 +510,15 @@ MapPosition = 0,14,12
 #-------------------------------
 [095]   # Lillium City
 Name = Lillium City
-MapPosition = 0,14,16
+MapPosition = 0,14,12
 #-------------------------------
 [096]   # Lillium City
 Name = Lillium City
-MapPosition = 0,14,16
+MapPosition = 0,14,12
 #-------------------------------
 [097]   # Lillium City
 Name = Lillium City
-MapPosition = 0,14,16
+MapPosition = 0,14,12
 #-------------------------------
 [098]   # Lillium Pokémon Center
 Name = Lillium Pokémon Center
@@ -525,15 +529,15 @@ Name = PokéMart
 Outdoor = false
 MapPosition = 0,14,12
 #-------------------------------
-[100]   # Lillium City Home
+[100]   # Lillium City
 Name = Lillium City Home
 MapPosition = 0,14,12
 #-------------------------------
-[101]   # Lillium City Home
+[101]   # Lillium City
 Name = Lillium City Home
 MapPosition = 0,14,12
 #-------------------------------
-[102]   # Lillium City Home
+[102]   # Lillium City
 Name = Lillium City Home
 MapPosition = 0,14,12
 #-------------------------------

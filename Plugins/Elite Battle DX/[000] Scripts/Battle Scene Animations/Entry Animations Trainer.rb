@@ -7,12 +7,62 @@ class EliteBattle_BasicTrainerAnimations
   #  class constructor
   #-----------------------------------------------------------------------------
   def initialize(viewport, battletype, foe)
+	$game_temp.in_battle = true
     @viewport = viewport
     trainertype = GameData::TrainerType.get(foe[0].trainer_type)
     # plays random battle intro
-    styles = ["anim1", "anim2", "anim3"]
-    sel = styles[rand(styles.length)]
+    #styles = ["anim1", "anim2", "anim3"]
+    #sel = styles[rand(styles.length)]
     handled = false
+	# Determine location of battle
+	location = 0   # 0=outside, 1=inside, 2=cave, 3=water
+	if $PokemonGlobal.surfing || $PokemonGlobal.diving
+		location = 3
+	elsif $game_temp.encounter_type &&
+        GameData::EncounterType.get($game_temp.encounter_type).type == :fishing
+		location = 3
+	elsif $PokemonEncounters.has_cave_encounters?
+		location = 2
+	elsif !$game_map.metadata&.outdoor_map
+		location = 1
+	end
+	# Check for custom battle intro animations
+	handled = false
+	SpecialBattleIntroAnimations.each do |name, priority, condition, animation|
+		next if !condition.call(battletype, foe, location)
+		animation.call(viewport, battletype, foe, location)
+		handled = true
+		break
+	end
+	# Default battle intro animation
+	if !handled
+    # Determine which animation is played
+    anim = ""
+    if PBDayNight.isDay?
+      case battletype
+      when 0, 2   # Wild, double wild
+        anim = ["SnakeSquares", "DiagonalBubbleTL", "DiagonalBubbleBR", "RisingSplash"][location]
+      when 1      # Trainer
+        anim = ["TwoBallPass", "ThreeBallDown", "BallDown", "WavyThreeBallUp"][location]
+      when 3      # Double trainer
+        anim = "FourBallBurst"
+      end
+    else
+      case battletype
+		when 0, 2   # Wild, double wild
+			anim = ["SnakeSquares", "DiagonalBubbleBR", "DiagonalBubbleBR", "RisingSplash"][location]
+		when 1      # Trainer
+			anim = ["SpinBallSplit", "BallDown", "BallDown", "WavySpinBall"][location]
+		when 3      # Double trainer
+			anim = "FourBallBurst"
+		end
+	end
+		pbBattleAnimationCore(anim, viewport, location)
+	end
+#	pbPushFade
+  # Yield to the battle scene
+#	yield if block_given?
+	
     # plays rainbow intro animation if applicable
     handled = self.rainbowIntro(@viewport) if EliteBattle.can_transition?("rainbowIntro", foe[0].trainer_type, :Trainer, foe[0].name, foe[0].partyID) && EliteBattle.get(:smAnim)
     # plays evil team animation if applicable
@@ -28,10 +78,10 @@ class EliteBattle_BasicTrainerAnimations
     elsif EliteBattle.can_transition?("teamSkull", foe[0].trainer_type, :Trainer, foe[0].name, foe[0].partyID)
       return self.teamSkull(@viewport, foe[0].trainer_type)
     # plays override if applicable
-    #elsif !handled && pbBattleAnimationOverride(viewport, battletype, foe)
+	elsif !handled && pbBattleAnimationOverride(viewport, battletype, foe)
     # plays random trainer animation
-    elsif !handled && self.respond_to?(sel.to_sym)
-      eval("self.#{sel}")
+    #elsif !handled && self.respond_to?(sel.to_sym)
+    #  eval("self.#{sel}")
     end
     return true
   end
@@ -731,9 +781,9 @@ class IntegratedVSSequence
     @sprites["vs"].toggle = 1
     # draws the scrolling background
     @sprites["bg"] = ScrollingSprite.new(@viewport)
-    id = GameData::TrainerType.get(@trainerid).id_number
+    id = GameData::TrainerType.get(@trainerid).id
     str = sprintf("vsBar%s", @trainerid)
-    str = sprintf("vsBar%03d", id) if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
+    str = sprintf("vsBar%s", id) if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     str = "vsBar" if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     @sprites["bg"].setBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     @sprites["bg"].visible = false

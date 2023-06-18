@@ -404,6 +404,15 @@ module QuestModule
 	
 	Quest33 = {
     :ID => "33",
+    :Name => "Looking for Dori.",
+    :Stage1 => "Search for Dori on Route B.",
+    :Location1 => "Route B.",
+    :QuestDescription => "Garrison let us in on some information about Gavin Harris, the old gym leader before Dori. Gavin has given his gym up to Dori and has tasked Garrison with training her. Dori has lost another battle and has ran off to Route B in a fit of rage. We're going to find her, and bring her back to the city in hopes of calming her down.",
+    :RewardString => "A Gym Battle... Hopefully."
+	}
+	
+	Quest34 = {
+    :ID => "34",
     :Name => "The First Gym!",
     :Stage1 => "Defeat Garrison.",
     :Location1 => "Lillium City Gym",
@@ -411,8 +420,8 @@ module QuestModule
     :RewardString => "Lillium City Badge"
 	}
 	
-	Quest34 = {
-    :ID => "34",
+	Quest35 = {
+    :ID => "35",
     :Name => "Continue the journey!",
     :Stage1 => "Head to Paeonia City.",
     :Location1 => "Paeonia City",
@@ -420,8 +429,8 @@ module QuestModule
     :RewardString => "New Location"
 	}
 	
-	Quest35 = {
-    :ID => "35",
+	Quest36 = {
+    :ID => "36",
     :Name => "Talkative Grunts",
     :Stage1 => "Tail the Team Blight Grunts.",
     :Location1 => "Paeonia City",
