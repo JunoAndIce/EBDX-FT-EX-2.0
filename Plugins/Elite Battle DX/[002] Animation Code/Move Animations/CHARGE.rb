@@ -41,10 +41,11 @@ EliteBattle.defineMoveAnimation(:CHARGE) do | args |
   fp["circle"].zoom_x = 0.5
   fp["circle"].zoom_y = 0.5
   # start animation
-  @vector.set(@scene.getRealVector(@userIndex, !@targetIsPlayer))
+  #@vector.set(@scene.getRealVector(@userIndex, !@targetIsPlayer))
+  @vector.set(@scene.getRealVector(@userIndex, @userIsPlayer))
   @sprites["battlebg"].defocus
   for i in 0...112
-    pbSEPlay("Anim/Flash3",90) if i == 32
+    pbSEPlay("EBDX/Anim/electric1",[i+10, 100].max) if i%14 == 0
     pbSEPlay("Anim/Saint8") if i == 64
     cx, cy = @userSprite.getCenter
     for j in 0...8
@@ -137,6 +138,7 @@ EliteBattle.defineMoveAnimation(:CHARGE) do | args |
   end
   if strike
     for i in 0...2
+	  pbSEPlay("EBDX/Anim/electric1")
       8.times do
         @userSprite.x -= (@targetIsPlayer ? 12 : -6)*(i==0 ? 1 : -1)
         @userSprite.y += (@targetIsPlayer ? 4 : -2)*(i==0 ? 1 : -1)

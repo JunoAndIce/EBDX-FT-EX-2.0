@@ -35,7 +35,7 @@ EliteBattle.defineMoveAnimation(:AURASPHERE) do
     end
     if i == 8
       @vector.set(vector2)
-      pbSEPlay("Anim/eb_grass2",80)
+      pbSEPlay("Anim/grass2",80)
     end
     fp["bg"].update
     @scene.wait(1,true)
@@ -71,7 +71,7 @@ EliteBattle.defineMoveAnimation(:AURASPHERE) do
   fp["shot"].zoom_y = @userSprite.zoom_x
   fp["shot"].opacity = 0
   x = defaultvector[0]; y = defaultvector[1]
-  x2, y2 = @vector.spoof(defaultvector)
+  x2, y2 = @vector.spoof(defaultvector)  
   fp["shot"].x = cx
   fp["shot"].y = cy
   pbSEPlay("EBDX/Anim/normal5",80)

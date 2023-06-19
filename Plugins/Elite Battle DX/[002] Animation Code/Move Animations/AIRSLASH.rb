@@ -1,4 +1,16 @@
 #-------------------------------------------------------------------------------
+#  AERIALACE
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:AERIALACE) do
+  EliteBattle.playMoveAnimation(:AIRSLASH, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
+end
+#-------------------------------------------------------------------------------
+#  AIRCUTTER
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:AIRCUTTER) do
+  EliteBattle.playMoveAnimation(:AIRSLASH, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
+end
+#-------------------------------------------------------------------------------
 #  Air Slash
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:AIRSLASH) do

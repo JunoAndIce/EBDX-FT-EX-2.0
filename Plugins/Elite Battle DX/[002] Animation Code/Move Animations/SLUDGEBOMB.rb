@@ -22,6 +22,7 @@ EliteBattle.defineMoveAnimation(:SLUDGEBOMB) do | args |
     @scene.wait(1,true)
   end
   @vector.set(@scene.getRealVector(@targetIndex, @targetIsPlayer))
+  pbSEPlay("Anim/Poison")
   @targetSprite.color = Color.new(136,48,128,0)
   fp["sludge"].dispose
   # zooming onto the target
@@ -100,5 +101,29 @@ end
 #  Sludge
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:SLUDGE) do
+  EliteBattle.playMoveAnimation(:SLUDGEBOMB, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  SLUDGEWAVE
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:SLUDGEWAVE) do
+  EliteBattle.playMoveAnimation(:SLUDGEBOMB, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  VENOSHOCK
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:VENOSHOCK) do
+  EliteBattle.playMoveAnimation(:SLUDGEBOMB, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  TOXICTHREAD
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:TOXICTHREAD) do
+  EliteBattle.playMoveAnimation(:SLUDGEBOMB, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  VENOMDRENCH
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:VENOMDRENCH) do
   EliteBattle.playMoveAnimation(:SLUDGEBOMB, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
 end
