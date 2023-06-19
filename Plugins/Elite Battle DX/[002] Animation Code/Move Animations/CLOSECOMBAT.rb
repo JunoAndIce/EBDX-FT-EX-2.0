@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  SKYUPPERCUT
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:SKYUPPERCUT) do
+  EliteBattle.playMoveAnimation(:CLOSECOMBAT, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Close Combat
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:CLOSECOMBAT) do

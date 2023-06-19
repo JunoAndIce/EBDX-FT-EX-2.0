@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  PLUCK
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:PLUCK) do
+  EliteBattle.playMoveAnimation(:BUGBITE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
+end
+#-------------------------------------------------------------------------------
 #  Bug Bite
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:BUGBITE) do

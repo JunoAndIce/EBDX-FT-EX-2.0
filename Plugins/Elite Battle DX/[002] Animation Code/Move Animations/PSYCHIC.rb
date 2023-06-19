@@ -1,4 +1,16 @@
 #-------------------------------------------------------------------------------
+#  EXTRASENSORY
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:EXTRASENSORY) do | args |
+  EliteBattle.playMoveAnimation(:PSYCHIC, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  STOREDPOWER
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:STOREDPOWER) do | args |
+  EliteBattle.playMoveAnimation(:PSYCHIC, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Psychic
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:PSYCHIC) do

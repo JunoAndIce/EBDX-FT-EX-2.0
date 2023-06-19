@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  FREEZEDRY
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:FREEZEDRY) do
+  EliteBattle.playMoveAnimation(:ICEBEAM, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
+end
+#-------------------------------------------------------------------------------
 #  Ice Beam
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:ICEBEAM) do

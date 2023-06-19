@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  HEAVYSLAM
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:HEAVYSLAM) do
+  EliteBattle.playMoveAnimation(:IRONHEAD, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Iron Head
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:IRONHEAD) do

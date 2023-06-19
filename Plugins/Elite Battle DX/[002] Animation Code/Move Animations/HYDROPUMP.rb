@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  HYDROCANNON
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:HYDROCANNON) do
+  EliteBattle.playMoveAnimation(:HYDROPUMP, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Hydro Pump
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:HYDROPUMP) do

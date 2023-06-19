@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  SUPERFANG
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:SUPERFANG) do
+  EliteBattle.playMoveAnimation(:Bite, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Bite
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:BITE) do
@@ -48,7 +54,7 @@ EliteBattle.defineMoveAnimation(:BITE) do
       fp["fang2"].oy += 2
     end
     if i==32
-      pbSEPlay("Anim/Super Fang")
+      pbSEPlay("Anim/Bite")
     end
     fp["bg"].opacity += 4 if  i < 40
     if i >= 40

@@ -1,4 +1,10 @@
 #-------------------------------------------------------------------------------
+#  WATERFALL
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:WATERFALL) do
+  EliteBattle.playMoveAnimation(:CRABHAMMER, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Crabhammer
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:CRABHAMMER) do

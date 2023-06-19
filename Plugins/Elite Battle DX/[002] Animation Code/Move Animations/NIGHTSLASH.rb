@@ -1,4 +1,22 @@
 #-------------------------------------------------------------------------------
+#  PAYBACK
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:PAYBACK) do
+  EliteBattle.playMoveAnimation(:NIGHTSLASH, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  KNOCKOFF
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:KNOCKOFF) do
+  EliteBattle.playMoveAnimation(:NIGHTSLASH, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
+#  ASSURANCE
+#-------------------------------------------------------------------------------
+EliteBattle.defineMoveAnimation(:ASSURANCE) do
+  EliteBattle.playMoveAnimation(:NIGHTSLASH, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
+end
+#-------------------------------------------------------------------------------
 #  Night Slash
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:NIGHTSLASH) do
