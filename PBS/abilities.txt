@@ -1225,7 +1225,7 @@ Description = In hail, Sp. Atk is boosted.
 #-------------------------------
 [INTOXICATE]
 Name = Intoxicate
-Description = Normal-type moves become Poison-type and powered up.
+Description = May poison badly targets when a Pokémon makes contact.
 #-------------------------------
 [BELLOFSTORMS]
 Name = Bell of Storms

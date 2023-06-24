@@ -2883,8 +2883,8 @@ FormName = Mega Salazzle
 MegaStone = SALAZZITE
 BaseStats = 68,64,70,148,150,80
 BaseExp = 305
-Abilities = MERCILESS
-HiddenAbilities = MERCILESS
+Abilities = QUEENLYMAJESTY
+HiddenAbilities = QUEENLYMAJESTY
 Pokedex = Salazzle's poisons are said to be so deadly that coming in contact with it for at least .5 miliseconds is enough to be fatal.
 #-------------------------------
 [ZANGOOSE,1]

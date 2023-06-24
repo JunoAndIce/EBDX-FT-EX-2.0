@@ -218,7 +218,7 @@ MapPosition = 0,11,16
 #-------------------------------
 [043]   # Lillium Ranch Lab
 Name = -
-Outdoor = true
+Outdoor = false
 ShowArea = false
 #-------------------------------
 [044]   # Final Challenge

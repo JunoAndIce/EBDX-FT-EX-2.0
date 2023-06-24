@@ -1,0 +1,19 @@
+Hoothoot 
+BST: 262 --> 280
+Def: 30 --> 35
+Sp. Atk: 36 --> 44
+Speed: 50 --> 57
+
+Evolution Level: 20--> 28 
++28
+Noctowl:
+BST: 452 --> 480
+Def: 50 --> 62
+Sp.Atk:  86 --> 96
+Sp.Def: 96 --> 102
+
+Salandit
+BST: 320 --> 330
+Def: 40 --> 45
+Sp.Def: 40 --> 45
+

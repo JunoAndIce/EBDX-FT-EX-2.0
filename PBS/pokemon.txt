@@ -4285,7 +4285,7 @@ Generation = 2
 [HOOTHOOT]
 Name = Hoothoot
 Types = NORMAL,FLYING
-BaseStats = 60,30,30,50,36,56
+BaseStats = 60,30,35,57,44,56
 GenderRatio = Female50Percent
 GrowthRate = Medium
 BaseExp = 52
@@ -4312,7 +4312,7 @@ Evolutions = NOCTOWL,Level,20
 [NOCTOWL]
 Name = Noctowl
 Types = NORMAL,FLYING
-BaseStats = 100,50,50,70,86,96
+BaseStats = 100,50,62,70,96,102
 GenderRatio = Female50Percent
 GrowthRate = Medium
 BaseExp = 158
@@ -19487,7 +19487,7 @@ WildItemUncommon = BIGMUSHROOM
 [SALANDIT]
 Name = Salandit
 Types = POISON,FIRE
-BaseStats = 48,44,40,77,71,40
+BaseStats = 48,44,45,77,71,45
 GenderRatio = FemaleOneEighth
 GrowthRate = Medium
 BaseExp = 64
