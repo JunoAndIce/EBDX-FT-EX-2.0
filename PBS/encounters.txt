@@ -529,7 +529,7 @@ Water,2
     30,SURSKIT,22,24
     5,DEWPIDER,21,24
     4,MARILL,26,29
-    1,BINACLE,22,24
+    3,BINACLE,22,24
 OldRod
     70,REMORAID,6,7
     30,WISHIWASHI,8
@@ -806,7 +806,7 @@ Cave,5
     4,BERGMITE,41,42
     4,DELIBIRD,40,41
     3,SNOM,40
-    1,EISCUE,39,42
+    3,EISCUE,39,42
 #-------------------------------
 [249] # Galanthus Town
 Water,2
@@ -840,9 +840,9 @@ Land,21
     5,CUBCHOO,42,43
     5,SMOOCHUM,41,42
     4,SANDSHREW,43,44
-    4,SNOM,43
+    4,VULPIX,43
     3,DARUMAKA,42,43
-    3,VULPIX,41,43
+    3,ZORUA,41,43
 #-------------------------------
 [265] # Galanthus Ice Cave BF1
 Cave,5
@@ -889,9 +889,9 @@ Land,21
     5,CUBCHOO,42,43
     5,SMOOCHUM,41,42
     4,SANDSHREW,43,44
-    4,SNOM,43
+    4,VULPIX,43
     3,DARUMAKA,42,43
-    3,VULPIX,41,43
+    3,ZORUA,41,43
 OldRod
     70,GOLDEEN,7
     30,FINNEON,8
@@ -988,7 +988,7 @@ Water,2
     30,FRILLISH,31,32
     5,STARYU,25,27
     4,BASCULIN,26,27
-    1,CARVANHA,22,25
+    3,CARVANHA,22,25
 OldRod
     70,GOLDEEN,7
     30,FINNEON,8
@@ -1069,7 +1069,7 @@ Water,2
     30,FRILLISH,31,32
     5,STARYU,25,27
     4,ALOMOMOLA,24
-    1,MANTYKE,22,23
+    3,MANTYKE,22,23
 OldRod
     70,GOLDEEN,7
     30,FINNEON,8
@@ -1944,9 +1944,9 @@ Land,25
     10,MEDITITE,31,32
     10,SNORUNT,30,33
     10,SWINUB,32,33
-    5,SANDSHREW,33
+    5,JYNX,33
     5,SNORUNT,32,35
-    4,JYNX,32,33
+    4,SANDSHREW,32,33
     4,MRMIME,33
     3,DARUMAKA,30,33
     3,VULPIX,32
@@ -2070,7 +2070,7 @@ Water,2
     30,FRILLISH,31,32
     5,STARYU,25,27
     4,ALOMOMOLA,24
-    1,MANTYKE,22,23
+    3,MANTYKE,22,23
 OldRod
     70,REMORAID,7
     30,WISHIWASHI,8

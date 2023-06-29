@@ -57,7 +57,7 @@ MultipleForms.register(:TAUROS, {
       map_pos = $game_map.metadata&.town_map_position
       if map_pos && map_pos[0] == 1
         # for now tauros rare breed only able to encountered 10%
-        if rand(100) < 10
+        if rand(100) < 40
           next rand(2)+2
         else
           next 1

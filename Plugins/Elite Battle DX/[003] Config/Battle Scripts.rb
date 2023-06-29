@@ -88,7 +88,6 @@ module BattleScripts
     "turnStart0" => "Let's do this! Show me what you got!",
     "lastOpp" => "You're looking good! Let's see if you can hold up in the final stretch!",
     "lowHPOpp" => "Woah! Hang in there guys!",
-    "fainted" => "Alright! Let's keep this going!",
-    "loss" => "No way! That's it! You've earned the Folium Badge!",
+    "fainted" => "Nice! Told you I wasn't going to make this easy!",
   }
 end
