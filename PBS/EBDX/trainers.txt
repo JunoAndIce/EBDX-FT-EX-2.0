@@ -12,9 +12,16 @@ BattleVS         = flamesSM
 BattleVS         = wavesSM
 #-------------------------------
 [LEADER_Garrison]
-TrainerPositionX = -8
-BattleVS         = integratedVS
-BattleScript     = GARRISON
+BattleVS         = minorTrainer
+#-------------------------------
+[THUG]
+BattleVS         = minorTrainer
+#-------------------------------
+[POKEMONTRAINER_Faye]
+BattleVS         = minorTrainer
+#-------------------------------
+[POKEMONTRAINER_Del]
+BattleVS         = minorTrainer
 #-------------------------------
 [TEAMROCKET_M]
 BattleIntro      = evilTeam

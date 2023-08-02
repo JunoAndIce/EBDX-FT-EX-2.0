@@ -426,7 +426,7 @@ module QuestModule
     :Stage1 => "Head to Paeonia City.",
     :Location1 => "Paeonia City",
     :QuestDescription => "I've gotten my first gym badge! Garrison was a tough battle, but I managed to take him down! Now our next stop is Paeonia City. Faye suggests we meet up there and come up with a better plan to rescue Dori. I heard there's a shopping mall there, maybe I could stop by and see what they have.",
-    :RewardString => "New Location"
+    :RewardString => "New Sights!"
 	}
 	
 	Quest36 = {
@@ -435,6 +435,15 @@ module QuestModule
     :Stage1 => "Tail the Team Blight Grunts.",
     :Location1 => "Paeonia City",
     :QuestDescription => "Faye and I ran into some Team Blight grunts who were talking about taking a boat to Ixora Island. There's a possibility that Dori could be on her way to that Island as well! Faye wants me to tail the Blight grunts, and get a little more information out of them to be sure. I should make sure I'm not seen by them.",
-    :RewardString => "More Info"
+    :RewardString => "Dori's Wherabouts...?"
+	}
+	
+	Quest37 = {
+    :ID => "37",
+    :Name => "The road to Syringa",
+    :Stage1 => "Head to Syringa Town.",
+    :Location1 => "Syringa Town",
+    :QuestDescription => "The Team Blight grunts we were overhearing tried to ambush me! Luckily the officers showed up to get me out of that situation. After getting ambushed by Team Blight grunts, we decided to follow them to Syringa Town to hopefully get on the boat they're taking. We're probably going to need Rose's help.",
+    :RewardString => "A Boat Ride!"
 	}
 end

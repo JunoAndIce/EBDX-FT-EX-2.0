@@ -254,14 +254,14 @@ Environment = Rock
 Name = Greenleaf Orphanage
 MapPosition = 0,11,16
 #-------------------------------
-[049]
+[049]   # Paeonia Park
 Name = Rock Cave
 Bicycle = true
 MapPosition = 0,16,10
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
-[050]
+[050]   # Mini Mall Storage
 Name = Rock Cave
 Bicycle = true
 MapPosition = 0,16,10
