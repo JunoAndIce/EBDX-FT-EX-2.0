@@ -508,7 +508,7 @@ class DataBoxEBDX  <  SpriteWrapper
 	if @battler.status != :NONE
 		status = GameData::Status.get(@battler.status).icon_position
 		@sprites["status"].src_rect.y = @sprites["status"].src_rect.height * (status)
-		@sprites["status"].src_rect.width = status >= 0 ? @sprites["status"].bitmap.width : 0
+		@sprites["status"].src_rect.width = status >= 0 ? @sprites["status"].bitmap.width : -1
 	end
     # gets rid of the level up tone
     @sprites["base"].color.alpha -= 16 if @sprites["base"].color.alpha > 0

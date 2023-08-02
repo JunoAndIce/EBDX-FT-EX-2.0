@@ -28,4 +28,9 @@ module Graphics
     fast_forward_update
     $frame = 0
   end
+  
+  def stopSpeed
+	SPEEDUP_STAGES[$GameSpeed] = 0
+  end
+  
 end

@@ -121,7 +121,7 @@ ModularMenu.add_entry(:ENCOUNTER, _INTL("Encounters"), "menuSave") do |menu|
     }
 end
 # condition to satisfy
-ModularMenu.add_condition(:ENCOUNTER) { next $game_switches[Settings::GOTENCOUNTERLIST] }
+ModularMenu.add_condition(:ENCOUNTER) { next $game_switches[Settings::GOT_ENCOUNTER_LIST] }
 #-------------------------------------------------------------------------------
 #  Trainer Card
 #-------------------------------------------------------------------------------
@@ -137,13 +137,16 @@ end
 #-------------------------------------------------------------------------------
 ModularMenu.add_entry(:ACHIEVEMENTS, _INTL("Achievements"), "menuTrainer") do |menu|
  pbFadeOutIn {
-      scene = PokemonAchievements_Scene.new
-      screen = PokemonAchievements.new(scene)
-      screen.pbStartScreen
-      menu.pbRefresh
+	scene = PokemonAchievements_Scene.new
+	screen = PokemonAchievements.new(scene)
+	pbFadeOutIn(99999) { 
+    screen.pbStartScreen
     }
+ }
 end
+
 # condition to satisfy
+ModularMenu.add_condition(:ACHIEVEMENTS) { next $game_switches[Settings::JOINED_RANGERS] }
 #-------------------------------------------------------------------------------
 #  Save Screen
 #-------------------------------------------------------------------------------

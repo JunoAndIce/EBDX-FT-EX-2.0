@@ -1,0 +1,5 @@
+Name	   = Achievements System
+Version    = 1.0
+Essentials = 20.1
+Website    = https://reliccastle.com/resources/446/
+Credits    = Vendily, MegaMewthree
