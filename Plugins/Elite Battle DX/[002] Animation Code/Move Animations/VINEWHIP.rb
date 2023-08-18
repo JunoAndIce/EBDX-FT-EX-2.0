@@ -1,16 +1,4 @@
 #-------------------------------------------------------------------------------
-#  POWERWHIP
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:POWERWHIP) do
-  EliteBattle.playMoveAnimation(:VINEWHIP, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
-#  LEAFBLADE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:LEAFBLADE) do
-  EliteBattle.playMoveAnimation(:VINEWHIP, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
 #  Vine Whip
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:VINEWHIP) do

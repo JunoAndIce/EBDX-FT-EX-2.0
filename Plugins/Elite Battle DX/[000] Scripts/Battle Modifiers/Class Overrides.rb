@@ -169,7 +169,7 @@ class Battle
 end
 #===============================================================================
 #  recalculate stats on capture (boss battlers fix)
-module BattleCommon
+module Battle::CatchAndStoreMixin
   alias pbStorePokemon_ebdx pbStorePokemon unless self.method_defined?(:pbStorePokemon_ebdx)
   def pbStorePokemon(pokemon)
     pokemon.calc_stats

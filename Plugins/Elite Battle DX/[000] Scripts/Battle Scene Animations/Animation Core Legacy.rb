@@ -115,7 +115,7 @@ class Battle::Scene
     if idxMove >= 0
       choice[2] = @moves[idxMove]
     else
-      choice[2] = Battle::Move.from_pokemon_move(@battle, Pokemon::Move.new(moveID))   # PokeBattle_Move object
+      choice[2] = Battle::Move.from_pokemon_move(@battle, Pokemon::Move.new(moveID))   # Battle::Move object
       choice[2].pp = -1
     end
     choice[3] = target     # Target (-1 means no target yet)

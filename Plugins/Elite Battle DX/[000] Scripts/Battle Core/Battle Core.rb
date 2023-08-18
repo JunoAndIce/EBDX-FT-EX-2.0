@@ -19,6 +19,8 @@ class Battle
     @midspeech.uniq! if @midspeech.is_a?(Array)
     # override
     @battlescene = true
+    EliteBattle.InitializeSpecies
+    EliteBattle.InitializeItems
     return pbInitialize_ebdx(*args)
   end
   #-----------------------------------------------------------------------------

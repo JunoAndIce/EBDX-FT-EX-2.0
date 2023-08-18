@@ -220,7 +220,6 @@ class FightWindowEBDX
       # get numeric values of required variables
       movedata = GameData::Move.get(@moves[i].id)
       category = movedata.physical? ? 0 : (movedata.special? ? 1 : 2)
-      #type = GameData::Type.get(movedata.type).id_number
       type = GameData::Type.get(movedata.type).icon_position
       # create sprite
       @button["#{i}"] = Sprite.new(@viewport)
@@ -233,11 +232,12 @@ class FightWindowEBDX
       @button["#{i}"].bitmap.blt(3, 46, @typeBitmap, Rect.new(0, type*22, 72, 22))
       baseColor = @buttonBitmap.get_pixel(5, 32 + (type*74)).darken(0.4)
       pbSetSmallFont(@button["#{i}"].bitmap)
-      pbDrawOutlineText(@button["#{i}"].bitmap, 198, 10, 196, 42,"#{movedata.real_name}", Color.white, baseColor, 1) 
+      pbDrawOutlineText(@button["#{i}"].bitmap, 198, 10, 196, 42,"#{movedata.real_name}", Color.white, baseColor, 1)
       pp = "#{@moves[i].pp}/#{movedata.total_pp}"
       pbDrawOutlineText(@button["#{i}"].bitmap, 0, 48, 191, 26, pp, Color.white, baseColor, 2)
       pbSetSystemFont(@button["#{i}"].bitmap)
-      text = [[movedata.real_name, 99, 20, 2, baseColor, Color.new(0, 0, 0, 24)]]
+      selectedMoveNameYPos = 18
+      text = [[movedata.real_name, 99, selectedMoveNameYPos, 2, baseColor, Color.new(0, 0, 0, 24)]]
       pbDrawTextPositions(@button["#{i}"].bitmap, text)
       @button["#{i}"].src_rect.set(198, 0, 198, 74)
       @button["#{i}"].ox = @button["#{i}"].src_rect.width/2

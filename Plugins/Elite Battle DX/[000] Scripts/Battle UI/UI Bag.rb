@@ -200,7 +200,7 @@ class BagWindowEBDX
     # get a list of all the items
     self.checkPockets
     for item in @mergedPockets
-      next if item.nil?
+      next if item.nil? || item.length == 0 || !EliteBattle.CanGetItemData?(item[0])
       next if !(ItemHandlers.hasUseInBattle(item[0]) || ItemHandlers.hasBattleUseOnPokemon(item[0]) || ItemHandlers.hasBattleUseOnBattler(item[0]))
       case index
       when 0 # Medicine
@@ -243,8 +243,8 @@ class BagWindowEBDX
       @items["#{i}"].bitmap.blt(pbmp.width - icon.width - (pbmp.width - ibmp.width)/2 - 4, (pbmp.height/4 - icon.height)/2, icon, icon.rect, 164); icon.dispose
       # draw texxt
       text = [
-        ["#{GameData::Item.get(@pocket[i][0]).real_name}", pbmp.width/2 - 15, 2*pbmp.height/64 - 8, 2, @baseColor, Color.new(0, 0, 0, 32)],
-        ["x#{@pocket[i][1]}", pbmp.width/2 - 12, 8*pbmp.height/64 - 14, 2, @baseColor, Color.new(0, 0, 0, 32)],
+        ["#{GameData::Item.get(@pocket[i][0]).real_name}", pbmp.width/2 - 15, 2*pbmp.height/64, 2, @baseColor, Color.new(0, 0, 0, 32)],
+        ["x#{@pocket[i][1]}", pbmp.width/2 - 12, 8*pbmp.height/64, 2, @baseColor, Color.new(0, 0, 0, 32)],
       ]
       pbDrawTextPositions(@items["#{i}"].bitmap, text)
       # center sprite
@@ -275,8 +275,8 @@ class BagWindowEBDX
     bitmap.blt(0, 0, bmp, Rect.new(0,0,320,44))
     # draw text
     text = [
-      [@pname, bmp.width/2, -5, 2, Color.white, nil],
-      ["#{@page+1}/#{@pages}", bmp.width, -5, 0, Color.white, nil]
+      [@pname, bmp.width/2, 8, 2, Color.white, nil],
+      ["#{@page+1}/#{@pages}", bmp.width, 8, 0, Color.white, nil]
     ]
     pbDrawTextPositions(bitmap, text)
     bmp.dispose
@@ -502,7 +502,7 @@ class BagWindowEBDX
       @ret = nil
       return false
     else
-      @index = 0 if @index == 4 && GameData::Item.get(@lastUsed).id_number == 0
+      @index = 0 if @index == 4 && EliteBattle.GetItemID(GameData::Item.get(@lastUsed).id) == 0
       return true
     end
   end
@@ -510,25 +510,21 @@ class BagWindowEBDX
   #  refresh last item use
   #-----------------------------------------------------------------------------
   def refresh(skip = false)
-    #last = @lastUsed != 0 ? GameData::Item.get(@lastUsed).id_number : 0
-    last = @lastUsed != 0 ? GameData::Item.get(@lastUsed).id: ""
+    last = @lastUsed != 0 ? EliteBattle.GetItemID(GameData::Item.get(@lastUsed).id) : 0
     # format text
-    #i = last > 0 ? 1 : 0
-	i = last != "" ? 1 : 0
-    #name = last > 0 ? GameData::Item.get(@lastUsed).real_name : ""
-	name = last != "" ? GameData::Item.get(@lastUsed).id : ""
+    i = last > 0 ? 1 : 0
+    name = last > 0 ? GameData::Item.get(@lastUsed).real_name : ""
     text = ["", "#{name}"]
     # clean bitmap
     bmp = pbBitmap(@path + @lastImg)
-    icon = pbBitmap(GameData::Item.icon_filename(last))
+    icon = pbBitmap(GameData::Item.icon_filename(name))
     bitmap = @sprites["pocket4"].bitmap
     bitmap.clear
     bitmap.blt(0, 0, bmp, Rect.new(0, i*bmp.height/2, bmp.width, bmp.height/2))
-    #bitmap.blt(28, (bmp.height/2 - icon.height)/2 - 2, icon, icon.rect) if last > 0
-    bitmap.blt(28, (bmp.height/2 - icon.height)/2 - 2, icon, icon.rect) if last != ""
+    bitmap.blt(28, (bmp.height/2 - icon.height)/2 - 2, icon, icon.rect) if last > 0
     icon.dispose
     # draw text
-    dtext = [[text[i], bmp.width/2, 0, 2, @baseColor, Color.new(0, 0, 0, 32)]]
+    dtext = [[text[i], bmp.width/2, 14, 2, @baseColor, Color.new(0, 0, 0, 32)]]
     pbDrawTextPositions(bitmap, dtext); bmp.dispose
     @sprites["sel"].target(@sprites["pocket#{@index}"]) unless skip
   end
@@ -572,7 +568,7 @@ class BagWindowEBDX
   #  update function during item pocket selection
   #-----------------------------------------------------------------------------
   def updateMain
-    last = @lastUsed != 0 ? GameData::Item.get(@lastUsed).id_number : 0
+    last = @lastUsed != 0 ? EliteBattle.GetItemID(GameData::Item.get(@lastUsed).id) : 0
     # move the index around
     if Input.trigger?(Input::LEFT)
       @index -= 1
@@ -778,7 +774,12 @@ class Battle::Scene
     # close out bag
     @bagWindow.clearSel
     @bagWindow.hide
-    $lastUsed = nil if ret.is_a?(Numeric) || (ret.id_number > 0 && $PokemonBag.pbQuantity(ret.id) <= 1)
+    if ret.nil? && !(ret.is_a?(Numeric))
+      numId = EliteBattle.GetItemID(ret.id)
+      $lastUsed = nil if (numId > 0 && $bag.quantity(ret) <= 1)
+    else
+      $lastUsed = nil
+    end
     # try to remove low HP BGM
     setBGMLowHP(false)
   end

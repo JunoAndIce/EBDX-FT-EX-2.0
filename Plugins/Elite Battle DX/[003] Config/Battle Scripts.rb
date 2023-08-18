@@ -84,10 +84,43 @@ module BattleScripts
     end
   }
   #-----------------------------------------------------------------------------
-  GARRISON = {
-    "turnStart0" => "Let's do this! Show me what you got!",
-    "lastOpp" => "You're looking good! Let's see if you can hold up in the final stretch!",
-    "lowHPOpp" => "Woah! Hang in there guys!",
-    "fainted" => "Nice! Told you I wasn't going to make this easy!",
+  
+  GARRISON_L = {
+    "turnStart0" => proc do
+      pname = @battle.player[0].name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["Time to set this battle into motion!",
+                             "Let's do this #{pname}!"
+                           ])
+    end,
+    "lastOpp" => "Down to my final Pokémon! Let's clutch this out!",
+    "fainted" => "We're on a roll! Let's keep it going!",
+	"loss" => "And there it is! You've achieved your first badge!"
   }
+  
+  GARRISON = {
+    "turnStart0" => proc do
+      pname = @battle.player[0].name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["#{pname}... Don't hold back. Show me all the training you've been doing up till now.",
+                             "Let's GO!"
+                           ])
+    end,
+    "lastOpp" => "Damn! Is this all I'm gonna amount too...?",
+    "fainted" => "Let's go! Let's carry this momentum!",
+	"loss" => "No...! Is this it...?"
+  }
+  
+  DEL = {
+    "turnStart0" => proc do
+      pname = @battle.player[0].name
+      # begin code block for the first turn
+      @scene.pbTrainerSpeak(["It's time, #{pname}! Time for us to get serious!"
+                           ])
+    end,
+    "lastOpp" => "I'm not out yet! I've got one more!",
+    "fainted" => "I'm not slowing down! We've got all kinds of ideas!",
+	"loss" => "Wow! You're a step above us, huh?"
+  }
+  
 end

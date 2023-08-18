@@ -425,9 +425,20 @@ class DynamicPokemonSprite
     species = species.nil? ? @pokemon.species : species
     # sauce
     species = :BIDOOF if GameData::Species.exists?(:BIDOOF) && defined?(firstApr?) && firstApr?
-    if species
-      x = EliteBattle.get_data(species, :Species, (@index%2 == 0) ? :PX : :EX, (@pokemon.form rescue 0))
-      y = EliteBattle.get_data(species, :Species, (@index%2 == 0) ? :PY : :EY, (@pokemon.form rescue 0))
+    if species      
+      isPlayer = (@index%2 == 0) 
+      x = EliteBattle.get_data(species, :Species, (isPlayer) ? :PX : :EX, (@pokemon.form rescue 0))
+      y = EliteBattle.get_data(species, :Species, (isPlayer) ? :PY : :EY, (@pokemon.form rescue 0)) 
+      if x.nil?
+        x = 0 
+        echoln "Please, check #{species} because it's not correctly loaded from Metrics. X position will be reset to zero."
+      end
+      if y.nil?
+        y = 0 
+        echoln "Please, check #{species} because it's not correctly loaded from Metrics. Y position will be reset to zero."
+      end
+      x = x + (isPlayer ? EliteBattle::PLAYER_BACKSPRITE_X_OFFSET : EliteBattle::ENEMY_FRONT_X_OFFSET) 
+      y = y + (isPlayer ? EliteBattle::PLAYER_BACKSPRITE_Y_OFFSET : EliteBattle::ENEMY_FRONT_Y_OFFSET) 
       a = EliteBattle.get_data(species, :Species, :ALTITUDE, (@pokemon.form rescue 0))
       @sprite.ox -= x if !x.nil? && x.is_a?(Numeric)
       @sprite.oy -= y if !y.nil? && y.is_a?(Numeric)

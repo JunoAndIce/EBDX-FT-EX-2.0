@@ -47,6 +47,51 @@ module EliteBattle
   # ensure compiling
   @compiled = false
   @cachedData = []
+  @full_species = [:NONE]
+  @full_items = [:NONE]
+  #-----------------------------------------------------------------------------
+  # Indices parse
+  #-----------------------------------------------------------------------------
+  def self.GetStatusIconPosition(_status)
+      status = GameData::Status.get(_status)
+
+      return 0 if status.nil? || status.id == :NONE
+      return status if status.is_a?(Numeric)
+
+      iconpos = status.icon_position + 1
+      #EliteBattle.log.debug("Loading status #{status.id} with pos #{status.icon_position} and returning #{iconpos}")
+      return iconpos
+  end
+  
+  def self.ShowStatusIcon(_status)
+      status = GetStatusIconPosition(_status) 
+      return status > 0 if status.is_a?(Numeric)
+      return status.icon_position > 0
+  end
+
+  def self.InitializeSpecies 
+    GameData::Species.each_species { |s| @full_species.push(s.species) }
+  end
+
+  def self.CanGetItemData?(item)
+    return !@full_items.nil? && @full_items.include?(item)
+  end
+
+  def self.InitializeItems
+    GameData::Item.each do |item|
+      @full_items.push(item.id)
+    end
+  end
+  def self.GetSpeciesIndex(species)
+    number = @full_species.index(species) || 0
+    return number
+  end
+  def self.GetSpeciesID(species)
+    return GameData::Species.try_get(species)&.species
+  end
+  def self.GetItemID(item)
+    return @full_items.index(item) || 0
+  end
   #-----------------------------------------------------------------------------
   # initialize logger
   #-----------------------------------------------------------------------------
@@ -265,13 +310,17 @@ module EliteBattle
         ret = true if self.can_transition?("#{ext}SM", id, (poke ? :Species : :Trainer), variant, extr)
       end
       str = poke ? "species" : "trainer"
-      id = poke ? GameData::Species.get(id).id : GameData::TrainerType.get(id).id
+      #id = poke ? GameData::Species.get(id).id_number : GameData::TrainerType.get(id).id_number
+      custom_id = poke ? GetSpeciesIndex(GameData::Species.get(id).id) : GetTrainerID(GameData::TrainerType.get(id).id)
       sym = poke ? GameData::Species.get(id).id : GameData::TrainerType.get(id).id
       if !pbResolveBitmap(sprintf("Graphics/EBDX/Transitions/%s", sym)) && !pbResolveBitmap(sprintf("Graphics/EBDX/Transitions/%s_%d", sym, (poke && variant) ? variant : 0))
-        ret = false if !pbResolveBitmap(sprintf("Graphics/EBDX/Transitions/#{str}%s", id)) && !pbResolveBitmap(sprintf("Graphics/EBDX/Transitions/#{str}%s_%d", id, (poke && variant) ? variant : 0))
+        ret = false if !pbResolveBitmap(sprintf("Graphics/EBDX/Transitions/#{str}%03d", custom_id)) && !pbResolveBitmap(sprintf("Graphics/EBDX/Transitions/#{str}%03d_%d", custom_id, (poke && variant) ? variant : 0))
       end
     end
     return (@smAnim = ret)
+  end
+  def self.GetTrainerID(trainer_type)
+    return GameData::TrainerType.keys.index(trainer_type) || 1
   end
   #-----------------------------------------------------------------------------
   # adds additional metadata for Trainer and Pokemon

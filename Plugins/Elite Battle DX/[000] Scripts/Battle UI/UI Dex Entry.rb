@@ -76,7 +76,7 @@ class EliteBattle_Pokedex
     region = -1
     if Settings::USE_CURRENT_REGION_DEX
       region = pbGetCurrentRegion
-      region = -1 if region >= $Trainer.pokedex.dexes_count - 1
+      region = -1 if region >= $player.pokedex.dexes_count - 1
     else
       region = $PokemonGlobal.pokedexDex   # National Dex -1, regional Dexes 0, 1, etc.
     end
@@ -91,22 +91,22 @@ class EliteBattle_Pokedex
       indexText = sprintf("%03d", indexNumber)
     end
     # push text into array
-    textpos.push([_INTL("{1}   {2}", indexText, species_data.real_name), 262, 42, 0, base, shadow])
-    textpos.push([_INTL("Height:"), 274, 170, 0, base, shadow]) # 158
-    textpos.push([_INTL("Weight:"), 274, 202, 0, base, shadow]) # 190
+    textpos.push([_INTL("{1}   {2}", indexText, species_data.real_name), 262, 30, 0, base, shadow])
+    textpos.push([_INTL("Height"), 274, 158, 0, base, shadow])
+    textpos.push([_INTL("Weight"), 274, 190, 0, base, shadow])
     # Pokemon kind
-    textpos.push([_INTL("{1} Pokémon", species_data.category), 262, 78, 0, base, shadow]) #66
+    textpos.push([_INTL("{1} Pokémon", species_data.category), 262, 66, 0, base, shadow])
     # height and weight
     height = species_data.height
     weight = species_data.weight
     if System.user_language[3..4] == "US"   # If the user is in the United States
       inches = (height/0.254).round
       pounds = (weight/0.45359).round
-      textpos.push([_ISPRINTF("{1:d}'{2:02d}''", inches/12, inches%12), 422, 170, 1, base, shadow])
-      textpos.push([_ISPRINTF("{1:4.1f} lbs.", pounds/10.0), 442, 202, 1, base, shadow])
+      textpos.push([_ISPRINTF("{1:d}'{2:02d}''", inches/12, inches%12), 482, 158, 1, base, shadow])
+      textpos.push([_ISPRINTF("{1:4.1f} lbs.", pounds/10.0), 482, 190, 1, base, shadow])
     else
-      textpos.push([_ISPRINTF("{1:.1f} m", height/10.0), 422, 170, 1, base, shadow]) #158
-      textpos.push([_ISPRINTF("{1:.1f} kg", weight/10.0), 442, 202, 1, base, shadow]) #190
+      textpos.push([_ISPRINTF("{1:.1f} m", height/10.0), 482, 158, 1, base, shadow])
+      textpos.push([_ISPRINTF("{1:.1f} kg", weight/10.0), 482, 190, 1, base, shadow])
     end
     # Pokédex entry text
     drawTextEx(overlay, 32, 250, Graphics.width - 60, 4, species_data.pokedex_entry, base, shadow)
@@ -118,19 +118,13 @@ class EliteBattle_Pokedex
       footprint.dispose
     end
     # Draw the type icon(s)
-    #type1 = GameData::Type.get(species_data.type1).id_number 
-    #type2 = GameData::Type.get(species_data.type2).id
-    #
-    #type1rect = Rect.new(0, type1*height, @typebitmap.width, height)
-    #type2rect = Rect.new(0, type2*height, @typebitmap.width, height)
-    #overlay.blt(292, 122, @typebitmap, type1rect)
-    #overlay.blt(376, 122, @typebitmap, type2rect) if type1 != type2
-	species_data.types.each_with_index do |type, i|
-		height = @typebitmap.height/GameData::Type.values.length
-        type_number = GameData::Type.get(type).icon_position
-        type_rect = Rect.new(0, type_number * height, @typebitmap.width, height)
-        overlay.blt(296 + (72 * i), 122, @typebitmap, type_rect)
-      end
+    type1 = GameData::Type.get(species_data.types[0]).icon_position
+    type2 = species_data.types[1] ? GameData::Type.get(species_data.types[1]).icon_position : type1
+    height = @typebitmap.height/GameData::Type.values.length
+    type1rect = Rect.new(0, type1*height, @typebitmap.width, height)
+    type2rect = Rect.new(0, type2*height, @typebitmap.width, height)
+    overlay.blt(292, 122, @typebitmap, type1rect)
+    overlay.blt(376, 122, @typebitmap, type2rect) if type1 != type2
     # draw all text
     pbDrawTextPositions(overlay, textpos)
   end

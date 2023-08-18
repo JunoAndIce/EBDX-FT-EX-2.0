@@ -9,7 +9,7 @@ EliteBattle.configProcess(:ENVIRONMENTS) do
   EliteBattle.add_data(:Cave, :Environment, :BACKDROP, EnvironmentEBDX::CAVE)
   # Dark Cave (based on conditional)
   EliteBattle.add_data(proc{ |terrain, environ|
-    next environ == :Cave && GameData::MapMetadata.exists?($game_map.map_id) && $PokemonTemp.darknessSprite
+    next environ == :Cave && GameData::MapMetadata.exists?($game_map.map_id) && $game_temp.darkness_sprite
   }, :BACKDROP, EnvironmentEBDX::DARKCAVE)
   # Water
   EliteBattle.add_data(:MovingWater, :Environment, :BACKDROP, EnvironmentEBDX::WATER)

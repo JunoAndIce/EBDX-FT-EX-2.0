@@ -1,16 +1,4 @@
 #-------------------------------------------------------------------------------
-#  VOLTTACKLE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:VOLTTACKLE) do
-  EliteBattle.playMoveAnimation(:BOLTSTRIKE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
-#  WILDCHARGE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:WILDCHARGE) do
-  EliteBattle.playMoveAnimation(:BOLTSTRIKE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
 #  Bolt Strike
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:BOLTSTRIKE) do

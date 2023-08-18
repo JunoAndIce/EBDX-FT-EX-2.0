@@ -491,6 +491,7 @@ Pokemon = KIRLIA,22
 #-------------------------------
 [TEAMBLIGHT_M,Grunt,2]
 LoseText = Blasted!
+Pokemon = GLIMMET,23
 Pokemon = MIGHTYENA,22
 Pokemon = YAMASK,23
 #-------------------------------
@@ -618,7 +619,6 @@ Pokemon = RIBOMBEE,25
 LoseText = The fuck?!
 Pokemon = TOXEL,23
 Pokemon = SALANDIT,23
-Pokemon = TRUBBISH,24
 #-------------------------------
 [FISHERMAN,Igor]
 LoseText = I'm gone! Thank you!
@@ -627,7 +627,7 @@ Pokemon = PYUKUMUKU,24
 #-------------------------------
 [PICNICKER,Teresa]
 LoseText = Oh wow! You are ready!
-Pokemon = FLOETTE,22
+Pokemon = FLITTLE,22
 Pokemon = VIVILLON,23
 Pokemon = YAMPER,24
 #-------------------------------
@@ -682,12 +682,13 @@ Pokemon = VOLTORB,25
 LoseText = Yo, Yo, Yo!
 Pokemon = VENONAT,23
 Pokemon = NINJASK,24
-Pokemon = BEEDRILL,25
+Pokemon = SPIDOPS,25
 #-------------------------------
 [HIKER,Chuck]
 LoseText = Did you hear it?
 Pokemon = ONIX,25
 Pokemon = CUFANT,24
+Pokemon = NACLSTACK,24
 #-------------------------------
 [TEAMBLIGHT_M,Grunt,4]
 LoseText = The fuck?!
@@ -697,28 +698,27 @@ Pokemon = MURKROW,25
 #-------------------------------
 [TEAMBLIGHT_F,Grunt]
 LoseText = Wait, I lost...
-Pokemon = TRUBBISH,26
-Pokemon = THIEVUL,27
+Pokemon = TRUBBISH,25
+Pokemon = THIEVUL,25
 #-------------------------------
 [TEAMBLIGHT_M,Grunt,5]
 LoseText = Woah... You're actually not weak.
 Pokemon = GASTLY,25
-Pokemon = DROWZEE,26
-Pokemon = ARBOK,27
+Pokemon = SHROODLE,25
+Pokemon = ARBOK,26
 #-------------------------------
 [TEAMBLIGHT_F,Grunt,1]
 LoseText = Psh...
 Pokemon = BEEDRILL,26
-Pokemon = VENIPEDE,26
+Pokemon = LOKIX,26
 Pokemon = WHIRLIPEDE,27
 #-------------------------------
 [TEAMBLIGHT_F,Grunt,2]
 LoseText = Oh..
-Pokemon = WHIRLIPEDE,28
-Pokemon = HAUNTER,28
+Pokemon = SALANDIT,26
+Pokemon = HAUNTER,27
 Pokemon = GRIMER,28
 	Form = 1
-Pokemon = HOUNDOOM,28
 #-------------------------------
 [TEAMBLIGHT_ADMINf,Xyla]
 LoseText = What...? How...?
@@ -8160,3 +8160,14 @@ Pokemon = GARDEVOIR,100
 	Nature = TIMID
 	IV = 31,31,31,31,31,31
 	EV = 0,0,0,252,252,6
+#-------------------------------
+[TEAMBLIGHT_F,Grunt,30]
+LoseText = What?!
+Pokemon = DRIFLOON,23
+Pokemon = SHROODLE,23
+Pokemon = HOUNDOUR,23
+#-------------------------------
+[TEAMBLIGHT_M,Grunt,36]
+LoseText = Oh, c'mon...
+Pokemon = MASCHIFF,23
+Pokemon = TENTACOOL,24

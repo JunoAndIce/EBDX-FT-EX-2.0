@@ -32,8 +32,9 @@ class Battle::Scene
     base = pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{base}") ? base : "outdoor"
     # check if there is an assigned background for the trainer intro
     if @battle.opponent
-      #try = sprintf("%03d", GameData::TrainerType.get(@battle.opponent[0].trainer_type).id_number)
-	  try = sprintf("%s", GameData::TrainerType.get(@battle.opponent[0].trainer_type).id)
+      tt = GameData::TrainerType.get(@battle.opponent[0].trainer_type)
+      trainerNumber = EliteBattle.GetTrainerID(tt)
+      try = sprintf("%03d", trainerNumber)
       base = try if pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{try}")
     end
     @sprites["trainer_Anim"].setBitmap("Graphics/EBDX/Transitions/Common/#{base}")

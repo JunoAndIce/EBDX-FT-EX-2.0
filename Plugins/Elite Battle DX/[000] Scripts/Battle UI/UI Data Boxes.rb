@@ -247,6 +247,9 @@ class DataBoxEBDX  <  SpriteWrapper
     # reset of the set-up procedure
     @loaded = false
     @showing = false
+    @hpTextY = EliteBattle::HP_TEXT_Y_OFFSET
+    @hpTextX = EliteBattle::HP_TEXT_X_OFFSET
+    @hpTextYBitmap = EliteBattle::HP_TEXT_Y_BITMAP
     pbDisposeSpriteHash(@sprites)
     @sprites.clear
     # caches the bitmap used for coloring
@@ -304,10 +307,10 @@ class DataBoxEBDX  <  SpriteWrapper
     @sprites["caught"].ey = @sprites["container"].ey - 2
 
     @sprites["textHP"] = Sprite.new(@viewport)
-    @sprites["textHP"].bitmap = Bitmap.new(@sprites["container"].bitmap.width, @sprites["base"].bitmap.height + 8)
+    @sprites["textHP"].bitmap = Bitmap.new(@sprites["container"].bitmap.width, @sprites["base"].bitmap.height + 8 + @hpTextYBitmap)
     @sprites["textHP"].z = self.getMetric("hp", :z)
     @sprites["textHP"].ex = self.getMetric("hp", :x)
-    @sprites["textHP"].ey = self.getMetric("hp", :y) + 10
+    @sprites["textHP"].ey = self.getMetric("hp", :y)
     pbSetSmallFont(@sprites["textHP"].bitmap)
 
     @megaBmp = pbBitmap(@path + "symMega")
@@ -387,7 +390,8 @@ class DataBoxEBDX  <  SpriteWrapper
     # updates the HP text
     str = "#{self.hp}/#{@battler.totalhp}"
     @sprites["textHP"].bitmap.clear
-    textpos = [[str,@sprites["textHP"].bitmap.width,0,1,Color.white,Color.new(0,0,0,125)]]
+
+    textpos = [[str, @sprites["textHP"].bitmap.width + @hpTextX, @hpTextY,1,Color.white,Color.new(0,0,0,125)]]
     pbDrawTextPositions(@sprites["textHP"].bitmap,textpos) if @showhp
   end
   #-----------------------------------------------------------------------------
@@ -406,7 +410,7 @@ class DataBoxEBDX  <  SpriteWrapper
     @pokemon = @battler.displayPokemon
     # failsafe
     return if @pokemon.nil?
-    @hidden = EliteBattle.get_data(@pokemon.species, :Species, :HIDENAME, (@pokemon.form rescue 0)) && !$Trainer.owned?(@pokemon.species)
+    @hidden = EliteBattle.get_data(@pokemon.species, :Species, :HIDENAME, (@pokemon.form rescue 0)) && !$player.owned?(@pokemon.species)
     # exits the refresh if the databox isn't fully set up yet
     return if !@loaded
     # update for HP/EXP bars
@@ -504,12 +508,9 @@ class DataBoxEBDX  <  SpriteWrapper
       end
     end
     # shows status condition
-    #status = GameData::Status.get(@battler.status).id_number
-	if @battler.status != :NONE
-		status = GameData::Status.get(@battler.status).icon_position
-		@sprites["status"].src_rect.y = @sprites["status"].src_rect.height * (status)
-		@sprites["status"].src_rect.width = status >= 0 ? @sprites["status"].bitmap.width : -1
-	end
+    status = EliteBattle.GetStatusIconPosition(@battler.status) # GameData::Status.get(@battler.status).icon_position
+    @sprites["status"].src_rect.y = @sprites["status"].src_rect.height * (status - 1)
+    @sprites["status"].src_rect.width = status > 0 ? @sprites["status"].bitmap.width : 0
     # gets rid of the level up tone
     @sprites["base"].color.alpha -= 16 if @sprites["base"].color.alpha > 0
     # bobbing effect
