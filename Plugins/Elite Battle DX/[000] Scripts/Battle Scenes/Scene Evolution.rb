@@ -318,7 +318,7 @@ class PokemonEvolutionScene
     @sprites["msgwindow"].visible = false
     # plays Pokemon's cry
     GameData::Species.play_cry(@pokemon)
-    GameData::Species.cry_length(@pokemon.species, @pokemon.form).times { Graphics.update; self.update }
+    GameData::Species.cry_length(@pokemon.species, @pokemon.form).ceil.times { Graphics.update; self.update }
     pbBGMPlay("EBDX/Evolution")
     canceled = false
     # beginning glow effect
@@ -383,7 +383,7 @@ class PokemonEvolutionScene
   # function used to create the newly evolved Pokemon
   #-----------------------------------------------------------------------------
   def createEvolved
-    frames = GameData::Species.cry_length(@newspecies, @pokemon.form)
+    frames = GameData::Species.cry_length(@newspecies, @pokemon.form).ceil
     # plays Pokemon's cry
     pbBGMStop()
     GameData::Species.play_cry_from_species(@newspecies)
@@ -407,8 +407,8 @@ class PokemonEvolutionScene
     @pokemon.form    = 0 if @pokemon.isSpecies?(:MOTHIM)
     @pokemon.calc_stats
     # set species seen as true
-    $Trainer.pokedex.register(@pokemon.species, @pokemon.gender, @pokemon.form)
-    $Trainer.pokedex.set_owned(@pokemon.species)
+    $player.pokedex.register(@pokemon.species, @pokemon.gender, @pokemon.form)
+    $player.pokedex.set_owned(@pokemon.species)
     # learn moves upon evolution for evolved species
     # Learn moves upon evolution for evolved species
     movelist = @pokemon.getMoveList

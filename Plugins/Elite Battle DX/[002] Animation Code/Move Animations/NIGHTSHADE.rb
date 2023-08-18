@@ -1,40 +1,4 @@
 #-------------------------------------------------------------------------------
-#  DISABLE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:DISABLE) do
-  EliteBattle.playMoveAnimation(:NIGHTSHADE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
-end
-#-------------------------------------------------------------------------------
-#  PAINSPLIT
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:PAINSPLIT) do
-  EliteBattle.playMoveAnimation(:NIGHTSHADE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
-end
-#-------------------------------------------------------------------------------
-#  DREAMEATER
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:DREAMEATER) do
-  EliteBattle.playMoveAnimation(:NIGHTSHADE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
-end
-#-------------------------------------------------------------------------------
-#  GRUDGE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:GRUDGE) do
-  EliteBattle.playMoveAnimation(:NIGHTSHADE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
-end
-#-------------------------------------------------------------------------------
-#  SPITE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:SPITE) do
-  EliteBattle.playMoveAnimation(:NIGHTSHADE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
-end
-#-------------------------------------------------------------------------------
-#  HEX
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:HEX) do
-  EliteBattle.playMoveAnimation(:NIGHTSHADE, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, true)
-end
-#-------------------------------------------------------------------------------
 #  Night Shade
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:NIGHTSHADE) do
@@ -47,7 +11,7 @@ EliteBattle.defineMoveAnimation(:NIGHTSHADE) do
   factor = @userSprite.zoom_x
   shake = 2
   # play animation
-  pbSEPlay("Anim/Nightshade", 80)
+  pbSEPlay("Anim/fog2", 80)
   @sprites["battlebg"].defocus
   16.times do
     fp["bg"].opacity += 8

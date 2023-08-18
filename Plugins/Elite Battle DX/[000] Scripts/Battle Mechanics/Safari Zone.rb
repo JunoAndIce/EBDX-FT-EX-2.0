@@ -42,6 +42,8 @@ class SafariBattle
     args[0].safaribattle = true
     @battlescene = true
     @maxSize = args[2].length
+    EliteBattle.InitializeSpecies
+    EliteBattle.InitializeItems
     initialize_ebdx(*args)
   end
   def doublebattle?; return (@maxSize > 1); end
@@ -84,7 +86,7 @@ class Battle::Scene::Animation::ThrowBait < Battle::Scene::Animation
     # Calculate start and end coordinates for battler sprite movement
     batSprite = @sprites["pokemon_#{@battler.index}"]
     traSprite = @sprites["player_0"]
-    ballPos = PokeBattle_SceneConstants.pbBattlerPosition(@battler.index, batSprite.sideSize)
+    ballPos = Battle::Scene.pbBattlerPosition(@battler.index, batSprite.sideSize)
     ballStartX = traSprite.x + traSprite.src_rect.width/2
     ballStartY = traSprite.y + 48
     ballMidX   = 0   # Unused in arc calculation
@@ -93,7 +95,7 @@ class Battle::Scene::Animation::ThrowBait < Battle::Scene::Animation
     ballEndY   = ballPos[1] - 4
     # Set up bait sprite
     ball = addNewSprite(ballStartX, ballStartY,
-       "Graphics/Battle animations/safari_bait", PictureOrigin::Center)
+       "Graphics/Battle animations/safari_bait", PictureOrigin::CENTER)
     ball.setZ(0, batSprite.z + 1)
     delay = ball.totalDuration   # 0 or 7
     # Bait arc animation
@@ -151,8 +153,7 @@ class Battle::Scene::Animation::ThrowRock < Battle::Scene::Animation
     ballEndX   = batSprite.x
     ballEndY   = batSprite.y - batSprite.bitmap.height/2
     # Set up bait sprite
-    ball = addNewSprite(ballStartX, ballStartY,
-       "Graphics/Battle animations/safari_rock", PictureOrigin::Center)
+    ball = addNewSprite(ballStartX, ballStartY,"Graphics/Battle animations/safari_rock", PictureOrigin::CENTER)
     ball.setZ(0, batSprite.z + 1)
     delay = ball.totalDuration   # 0 or 7
     # Bait arc animation
@@ -165,8 +166,7 @@ class Battle::Scene::Animation::ThrowRock < Battle::Scene::Animation
     ball.moveOpacity(delay + 2, 2, 0)
     ball.setVisible(delay + 4, false)
     # Set up anger sprite
-    anger = addNewSprite(ballEndX - 42, ballEndY - 36,
-       "Graphics/Battle animations/safari_anger", PictureOrigin::Center)
+    anger = addNewSprite(ballEndX - 42, ballEndY - 36,"Graphics/Battle animations/safari_anger", PictureOrigin::CENTER)
     anger.setVisible(0, false)
     anger.setZ(0, batSprite.z + 1)
     # Show anger appearing

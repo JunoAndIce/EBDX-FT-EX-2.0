@@ -126,7 +126,7 @@ module EventExport
         for i in map.events.keys.sort
 		  pbSetWindowText("Exporting map #{n} event #{i}") if defined?(pbSetWindowText)
           event = map.events[i]
-          f.write(sprintf("Event ID: %03d\n", event.id))
+          f.write(sprintf("Map %03d - ",n)+ @@mapinfos[n].name + sprintf("; Event ID: %03d\n", event.id))
           f.write("Event Name: " + event.name + "\n")
           f.write(sprintf("(X,Y): (%03d,%03d)\n\n", event.x, event.y))
           for i in 0...event.pages.length

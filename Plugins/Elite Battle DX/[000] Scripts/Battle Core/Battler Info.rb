@@ -10,11 +10,18 @@ end
 #  additional functions for quick access to proper objects
 #===============================================================================
 def getBattlerAltitude(battler)
-  dat = GameData::SpeciesMetrics.get(battler.displaySpecies)
-  ret = (dat.front_sprite_altitude rescue 0)
-  ret = 0 if ret.nil?
-  ret = EliteBattle.get_data(battler.displaySpecies, :Species, :ALTITUDE, (battler.displayForm rescue 0))
-  return ret
+  return 0 if battler.nil? || battler.displaySpecies.nil?
+
+  if !EliteBattle::FORCE_EBDX_ALTITUDE
+    dat = GameData::SpeciesMetrics.get(battler.displaySpecies)
+    return 0 if dat.nil?
+    ret = (dat.front_sprite_altitude rescue 0)
+    ret = 0 if ret.nil?
+    return ret
+  end  
+  
+    ret = EliteBattle.get_data(battler.displaySpecies, :Species, :ALTITUDE, (battler.displayForm rescue 0))
+    return ret
 end
 #-------------------------------------------------------------------------------
 def playBattlerCry(battler)
@@ -70,11 +77,17 @@ class Battle::Battler
     return ret
   end
   #-----------------------------------------------------------------------------
+  #  compatibility for Essentials Deluxe
+  #-----------------------------------------------------------------------------
+  def pbResetForm
+    #@form = 0
+  end  
+  #-----------------------------------------------------------------------------
 end
 #===============================================================================
 #  Compatibility for generic multihit moves
 #===============================================================================
-class Battle::Move::HitTwoToFiveTimes < Battle::Move
+class Battle::Move::HitTwoToFiveTimes
   # alias original class
   alias pbNumHits_ebdx pbNumHits unless self.method_defined?(:pbNumHits_ebdx)
   def pbNumHits(*args)

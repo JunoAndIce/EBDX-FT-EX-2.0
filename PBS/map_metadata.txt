@@ -597,7 +597,7 @@ MapPosition = 0,14,9
 Name = Park House
 MapPosition = 0,13,7
 #-------------------------------
-[112]   # Paeonia Residential Area
+[112]   # Paeonia Residential D...
 Name = Paeonia Residential Area
 Outdoor = true
 ShowArea = true

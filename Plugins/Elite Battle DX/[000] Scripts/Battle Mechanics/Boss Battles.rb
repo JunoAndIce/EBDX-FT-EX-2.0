@@ -58,27 +58,27 @@ module EliteBattle
     genwildpoke = data.is_a?(Pokemon) ? data : self.generateWild(data)
     handled = [nil]
     # wild battle override
-    Events.onWildBattleOverride.trigger(genwildpoke, genwildpoke.species, genwildpoke.level, handled)
+    EventHandlers.trigger(:on_calling_wild_battle, genwildpoke.species, genwildpoke.level, handled)
     return handled[0] if handled[0] != nil
     # Skip battle if the player has no able Pokémon, or if holding Ctrl in Debug mode
-    if $Trainer.able_pokemon_count == 0 || ($DEBUG && Input.press?(Input::CTRL))
-      pbMessage(_INTL("SKIPPING BATTLE...")) if $Trainer.pokemonCount>0
+    if $player.able_pokemon_count == 0 || ($DEBUG && Input.press?(Input::CTRL))
+      pbMessage(_INTL("SKIPPING BATTLE...")) if $player.pokemonCount>0
       pbSet(outcomeVar, 1)   # Treat it as a win
-      $game_temp.clearBattleRules
+      $game_temp.clear_battle_rules
       $PokemonGlobal.nextBattleBGM       = nil
-      $PokemonGlobal.nextBattleME        = nil
+      $PokemonGlobal.nextBattleVictoryBGM       = nil
       $PokemonGlobal.nextBattleCaptureME = nil
       $PokemonGlobal.nextBattleBack      = nil
       return true   # Treat it as a win
     end
     # Record information about party Pokémon to be used at the end of battle (e.g.
     # comparing levels for an evolution check)
-    Events.onStartBattle.trigger(nil)
+    EventHandlers.trigger(:on_start_battle)
     # Generate wild Pokémon based on the species and level
     foeParty = [genwildpoke]
     # Calculate who the trainers and their party are
-    playerTrainers    = [$Trainer]
-    playerParty       = $Trainer.party
+    playerTrainers    = [$player]
+    playerParty       = $player.party
     playerPartyStarts = [0]
     room_for_partner = (foeParty.length > 1)
     if !room_for_partner && $game_temp.battle_rules["size"] && !["single", "1v1", "1v2", "1v3"].include?($game_temp.battle_rules["size"])
@@ -90,7 +90,7 @@ module EliteBattle
       ally.party = $PokemonGlobal.partner[3]
       playerTrainers.push(ally)
       playerParty = []
-      $Trainer.party.each { |pkmn| playerParty.push(pkmn) }
+      $player.party.each { |pkmn| playerParty.push(pkmn) }
       playerPartyStarts.push(playerParty.length)
       ally.party.each { |pkmn| playerParty.push(pkmn) }
       setBattleRule("double") if !$game_temp.battle_rules["size"]
@@ -119,7 +119,7 @@ module EliteBattle
     battle.party1starts = playerPartyStarts
     # Set various other properties in the battle class
     pbPrepareBattle(battle)
-    $game_temp.clearBattleRules
+    $game_temp.clear_battle_rules
     # Perform the battle itself
     decision = 0
     pbBattleAnimation(pbGetWildBattleBGM(foeParty), (foeParty.length == 1) ? 0 : 2, foeParty) {
@@ -131,7 +131,7 @@ module EliteBattle
     Input.update
     pbSet(outcomeVar, decision)
     # Used by the Poké Radar to update/break the chain
-    Events.onWildBattleEnd.trigger(nil, genwildpoke.species, genwildpoke.level, decision)
+    EventHandlers.trigger(:on_wild_battle_end, genwildpoke.species, genwildpoke.level, decision)
     # return full decision outcome
     return (decision != 2 && decision != 5)
   end
@@ -166,4 +166,13 @@ module EliteBattle
     return self.wildBattle(data, partysize, false, false)
   end
   #-----------------------------------------------------------------------------
+end
+
+def pbTestBossBattle
+  EliteBattle.bossBattle(:BULBASAUR, 20, 2, true,
+  { 
+    :form => 1,
+    :shiny => true, 
+    :bossboost => { :HP => 1.75, :ATTACK => 1.25, :DEFENSE => 1.25, :SPECIAL_ATTACK => 1.25, :SPECIAL_DEFENSE => 1.25, :SPEED => 1.25 }
+  })
 end

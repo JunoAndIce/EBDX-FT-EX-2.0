@@ -22,7 +22,7 @@ class EliteBattle_BasicWildAnimations
       end
     end
     # animation selection processing for regular battles
-    if (!@level.nil? && @level > $Trainer.party[0].level)
+    if (!@level.nil? && @level > $player.party[0].level)
       return self.overlevel
     elsif ($PokemonGlobal && ($PokemonGlobal.surfing || $PokemonGlobal.diving || $PokemonGlobal.fishing))
       return self.water
@@ -600,8 +600,9 @@ class SunMoonSpeciesTransitions
     for j in 0...24
       n = ["A", "B"][rand(2)]
       @sprites["p#{j}"] = Sprite.new(@viewport)
+      species_id = EliteBattle.GetSpeciesIndex(@species)
       str = "Graphics/EBDX/Transitions/Species/particle#{n}#{@species.id}"
-      str = "Graphics/EBDX/Transitions/Species/particle#{n}#{@species.id_number}" if !pbResolveBitmap(str)
+      str = "Graphics/EBDX/Transitions/Species/particle#{n}#{species_id}" if !pbResolveBitmap(str)
       str = "Graphics/EBDX/Transitions/Species/particle#{n}" if !pbResolveBitmap(str)
       @sprites["p#{j}"].bitmap = pbBitmap(str)
       @sprites["p#{j}"].ox = @sprites["p#{j}"].bitmap.width/2
@@ -613,11 +614,12 @@ class SunMoonSpeciesTransitions
       @sprites["p#{j}"].z = 450
       @sprites["p#{j}"].z += 1 if rand(2) == 0
     end
+    species_id = EliteBattle.GetSpeciesIndex(@species)
     # determines the extension for the Pokemon bitmap
     str = sprintf("%s_%d", @species.id, @form)
     str = sprintf("%s", @species.id) if !pbResolveBitmap("Graphics/EBDX/Transitions/#{str}")
-    str = sprintf("species%03d_%d", @species.id_number, @form) if !pbResolveBitmap("Graphics/EBDX/Transitions/#{str}")
-    str = sprintf("species%03d", @species.id_number) if !pbResolveBitmap("Graphics/EBDX/Transitions/#{str}")
+    str = sprintf("species%0s_%d", species_id, @form) if !pbResolveBitmap("Graphics/EBDX/Transitions/#{str}")
+    str = sprintf("species%03d", species_id) if !pbResolveBitmap("Graphics/EBDX/Transitions/#{str}")
     # initializes the necessary Pokemon graphic
     @sprites["poke1"] = Sprite.new(@viewport)
     @sprites["poke1"].bitmap = pbBitmap("Graphics/EBDX/Transitions/#{str}")

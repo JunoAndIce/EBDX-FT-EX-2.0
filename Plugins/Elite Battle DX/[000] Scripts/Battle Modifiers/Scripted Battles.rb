@@ -43,7 +43,7 @@ class Battle
   def pbMegaEvolve(index)
     return if !@battlers[index] || !@battlers[index].pokemon
     return if !(@battlers[index].hasMega? rescue false)
-    return if (@battlers[index].isMega? rescue true)
+    return if (@battlers[index].mega? rescue true)
     # displays trainer dialogue if applicable
     @scene.pbTrainerBattleSpeech(playerBattler?(@battlers[index]) ? "mega" : "megaOpp")
     return pbMegaEvolve_ebdx(index)
@@ -319,19 +319,22 @@ end
 #  trainer full name double spacing bug fix
 #===============================================================================
 class Trainer
+  def fullname
+    return name
+  end
   #-----------------------------------------------------------------------------
   #  applies bugfix
   #-----------------------------------------------------------------------------
-  alias full_name_ebdx full_name unless self.method_defined?(:fullname_ebdx)
-  def full_name
-    return full_name_ebdx.gsub("  ","")
+  alias fullname_ebdx fullname unless self.method_defined?(:fullname_ebdx)
+  def fullname
+    return fullname_ebdx.gsub("  ","")
   end
   #-----------------------------------------------------------------------------
 end
 #===============================================================================
 #  AI override to send out ace last
 #===============================================================================
-class PokeBattle_AI
+class Battle::AI
   #-----------------------------------------------------------------------------
   def pbChooseBestNewEnemy(idxBattler, party, enemies)
     return -1 if !enemies || enemies.length == 0

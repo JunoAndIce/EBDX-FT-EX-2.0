@@ -781,9 +781,10 @@ class IntegratedVSSequence
     @sprites["vs"].toggle = 1
     # draws the scrolling background
     @sprites["bg"] = ScrollingSprite.new(@viewport)
-    id = GameData::TrainerType.get(@trainerid).id
-    str = sprintf("vsBar%s", @trainerid)
-    str = sprintf("vsBar%s", id) if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
+    trainerNumber = EliteBattle.GetTrainerID(@trainerid)
+    id = GameData::TrainerType.get(@trainerid).id #     
+    str = sprintf("vsBar%s", id)
+    str = sprintf("vsBar%03d", trainerNumber) if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     str = "vsBar" if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     @sprites["bg"].setBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     @sprites["bg"].visible = false
@@ -951,7 +952,8 @@ class SunMoonBattleTransitions
     @sprites["trainer_"] = Sprite.new(@viewport)
     @sprites["trainer_"].z = 350
     file = sprintf("Graphics/EBDX/Transitions/%s", @trainertype.id)
-    file = sprintf("Graphics/EBDX/Transitions/trainer%03d", @trainertype.id_number) if !pbResolveBitmap(file)
+    trainerNumber = EliteBattle.GetTrainerID(@trainertype.id)
+    file = sprintf("Graphics/EBDX/Transitions/trainer%03d", trainerNumber) if !pbResolveBitmap(file)
     @sprites["trainer_"].bitmap = pbBitmap(file)
     # splice bitmap
     if @sprites["trainer_"].bitmap.height > @viewport.height
@@ -1229,7 +1231,8 @@ class ClassicVSSequence
     @trainertype = GameData::TrainerType.get(@trainer.trainer_type)
     # load trainer bitmap
     file = sprintf("Graphics/EBDX/Transitions/%s", @trainertype.id)
-    file = sprintf("Graphics/EBDX/Transitions/classic%03d", @trainertype.id_number) if !pbResolveBitmap(file)
+    trainerNumber = EliteBattle.GetTrainerID(@trainertype.id)
+    file = sprintf("Graphics/EBDX/Transitions/classic%03d", trainerNumber) if !pbResolveBitmap(file)
     bmp = pbBitmap(file)
     # set up backdrop
     @sprites["backdrop"] = Sprite.new(@viewport)
@@ -1265,7 +1268,8 @@ class ClassicVSSequence
     # draws the scrolling background
     @sprites["bg"] = ScrollingSprite.new(@viewport)
     str = sprintf("classicBar%s", @trainertype.id)
-    str = sprintf("classicBar%03d", @trainertype.id_number) if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
+    trainerNumber = EliteBattle.GetTrainerID(@trainertype.id)
+    str = sprintf("classicBar%03d", trainerNumber) if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     str = "classicBar" if !pbResolveBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     @sprites["bg"].setBitmap("Graphics/EBDX/Transitions/Common/#{str}")
     @sprites["bg"].y = 92

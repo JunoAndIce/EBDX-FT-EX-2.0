@@ -109,7 +109,7 @@ end
 #===============================================================================
 #  destiny bond immunity for bosses
 #===============================================================================
-class Battle::Move::AttackerFaintsIfUserFaints < Battle::Move
+class Battle::Move::AttackerFaintsIfUserFaints 
   alias destinybond_ebdx pbFailsAgainstTarget? unless self.method_defined?(:destinybond_ebdx)
   def pbFailsAgainstTarget?(*args)
     rule = EliteBattle.get_data(:BOSSBATTLES, :Metrics, :IMMUNITIES)
@@ -124,7 +124,7 @@ end
 #===============================================================================
 #  leech seed immunity for bosses
 #===============================================================================
-class Battle::Move::StartLeechSeedTarget < Battle::Move
+class Battle::Move::StartLeechSeedTarget 
   alias leechseed_ebdx pbFailsAgainstTarget? unless self.method_defined?(:leechseed_ebdx)
   def pbFailsAgainstTarget?(*args)
     rule = EliteBattle.get_data(:BOSSBATTLES, :Metrics, :IMMUNITIES)
@@ -139,7 +139,7 @@ end
 #===============================================================================
 #  OHKO immunity
 #===============================================================================
-class Battle::Move::OHKO < Battle::Move::FixedDamageMove
+class Battle::Move::OHKO 
   alias ohkomove_ebdx pbFailsAgainstTarget? unless self.method_defined?(:ohkomove_ebdx)
   def pbFailsAgainstTarget?(*args)
     rule = EliteBattle.get_data(:BOSSBATTLES, :Metrics, :IMMUNITIES)
@@ -154,7 +154,7 @@ end
 #===============================================================================
 #  Perish Song immunity
 #===============================================================================
-class Battle::Move::StartPerishCountsForAllBattlers < Battle::Move
+class Battle::Move::StartPerishCountsForAllBattlers
   alias perishsong_ebdx pbFailsAgainstTarget? unless self.method_defined?(:perishsong_ebdx)
   def pbFailsAgainstTarget?(*args)
     rule = EliteBattle.get_data(:BOSSBATTLES, :Metrics, :IMMUNITIES)

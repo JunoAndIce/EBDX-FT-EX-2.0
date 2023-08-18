@@ -99,7 +99,8 @@ class PokemonEggHatch_Scene
     # get graphics for the egg crack
     crackfilename = sprintf("Graphics/EBDX/Battlers/Eggs/%scracks", @pokemon.species) rescue nil
     if !pbResolveBitmap(crackfilename)
-      crackfilename = sprintf("Graphics/EBDX/Battlers/Eggs/%03dcracks", GameData::Species.get(@pokemon.species).id_number)
+      species_id = EliteBattle.GetSpeciesIndex(@pokemon.species)
+      crackfilename = sprintf("Graphics/EBDX/Battlers/Eggs/%03dcracks", species_id)
       if !pbResolveBitmap(crackfilename)
         crackfilename = sprintf("Graphics/EBDX/Battlers/Eggs/000cracks")
       end
@@ -235,7 +236,7 @@ class PokemonEggHatch_Scene
     end
     self.wait(32)
     # Finish scene
-    frames = GameData::Species.cry_length(@pokemon.species, @pokemon.form)
+    frames = GameData::Species.cry_length(@pokemon.species, @pokemon.form).ceil
     pbBGMStop()
     GameData::Species.play_cry(@pokemon)
     frames.times do

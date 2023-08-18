@@ -121,7 +121,8 @@ class Battle::Scene
   #  scene wait with animation
   #-----------------------------------------------------------------------------
   def wait(frames = 1, align = false, &block)
-    frames.times do
+    frames_to_wait = frames.to_i
+    frames_to_wait.times do
       animateScene(align, &block)
       Graphics.update if !EliteBattle.get(:smAnim)
     end

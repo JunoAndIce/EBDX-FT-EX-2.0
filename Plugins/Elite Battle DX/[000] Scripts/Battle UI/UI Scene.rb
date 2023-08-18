@@ -48,9 +48,9 @@ class Battle::Scene
     @sprites["messageWindow"].viewport = @msgview
     @sprites["messageWindow"].z = @sprites["messageBox"].z + 1
     # old command elements
-    @sprites["commandWindow"] = CommandMenu.new(@msgview, 0) # Retained for compatibility
+    @sprites["commandWindow"] = Battle::Scene::CommandMenu.new(@msgview, 0) # Retained for compatibility
     @sprites["commandWindow"].visible = false # Retained for compatibility
-    @sprites["fightWindow"] = FightMenu.new(@msgview, 0) # Retained for compatibility
+    @sprites["fightWindow"] = Battle::Scene::FightMenu.new(@msgview, 0) # Retained for compatibility
     @sprites["fightWindow"].visible = false # Retained for compatibility
     # new command and fight menu UI
     @commandWindow = CommandWindowEBDX.new(@msgview, @battle, self, @safaribattle)

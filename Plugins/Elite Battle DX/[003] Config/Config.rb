@@ -54,6 +54,29 @@ module EliteBattle
   # add EBDX debug menu
   SHOW_DEBUG_FEATURES = false
 
+  #offset of the HP text (e.g: 10/10) so you can move it around
+  HP_TEXT_Y_OFFSET = 10
+  HP_TEXT_X_OFFSET = 0
+
+  # The offset might require to set extra height to the bitmap where it is allocated
+  HP_TEXT_Y_BITMAP = 20
+
+  # Offset to adjust the "origin" of the player backsprite. Take into account, if you use Sprite Positioner this won't move the sprite.
+  PLAYER_BACKSPRITE_X_OFFSET = 0
+  PLAYER_BACKSPRITE_Y_OFFSET = -20
+
+  # Offset to adjust the "origin" of the foe frontsprite. Take into account, if you use Sprite Positioner this won't move the sprite.
+  ENEMY_FRONT_X_OFFSET = 0
+  ENEMY_FRONT_Y_OFFSET = 0
+
+  # if True, animated sprites are checked first in battle. If false, static sprites are checked first.
+  PRIORITIZE_ANIMATED_SPRITES = true
+
+  # ZUD plugins clear cached data so EBDX gets stuck. Setting this to true skips the cache and directly loads the game.
+  SKIP_CACHED_DATA = false
+
+  #if set to false, pokemon_metrics.txt is checked first (default Essentials file). If not, that file is skipped.
+  FORCE_EBDX_ALTITUDE = true
 end
 #-------------------------------------------------------------------------------
 # Adds additional "camera" vectors for when the camera is idling

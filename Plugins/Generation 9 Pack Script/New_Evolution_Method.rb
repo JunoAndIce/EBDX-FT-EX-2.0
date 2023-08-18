@@ -68,7 +68,7 @@ MultipleForms.register(:TAUROS, {
   }
 })
 
-MultipleForms.copy(:RATTATA,:WOOPER,:QUILAVA,:DEWOTT,:PETILIL,:RUFFLET,:GOOMY,:BERGMITE,:DARTRIX)
+MultipleForms.copy(:RATTATA,:WOOPER,:QUILAVA,:DEWOTT,:RUFFLET,:GOOMY,:BERGMITE,:DARTRIX)
 
 MultipleForms.register(:LECHONK, {
   "getFormOnCreation" => proc { |pkmn|

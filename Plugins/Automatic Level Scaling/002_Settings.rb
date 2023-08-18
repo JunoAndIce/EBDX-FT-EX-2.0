@@ -9,12 +9,12 @@ module LevelScalingSettings
   TRAINER_VARIABLE = 27
   WILD_VARIABLE = 28
 
-  AUTOMATIC_EVOLUTIONS = false
-  INCLUDE_PREVIOUS_STAGES = true # Reverts pokemon to previous evolution stages if they did not reach the evolution level
+  AUTOMATIC_EVOLUTIONS = true
+  INCLUDE_PREVIOUS_STAGES = false # Reverts pokemon to previous evolution stages if they did not reach the evolution level
 
   # Trainer and wild pokemon that do not evolve by level automatically evolve in these levels instead
   DEFAULT_FIRST_EVOLUTION_LEVEL = 36
-  DEFAULT_SECOND_EVOLUTION_LEVEL = 74
+  DEFAULT_SECOND_EVOLUTION_LEVEL = 45
 
   # Scales levels but takes original level differences into consideration
   # Don't forget to set random_increase values to 0 when using this setting

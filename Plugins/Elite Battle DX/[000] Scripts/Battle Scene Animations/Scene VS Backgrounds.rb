@@ -4,9 +4,11 @@
 def checkForTrainerVariant(files, trainerid, evilteam = false, teamskull = false)
   for i in 0...files.length
     str = sprintf("%s%s", files[i], trainerid.id)
-    #str = sprintf("%s%03d", files[i], trainerid.id_number) if !pbResolveBitmap(str)
+    trainerNumber = EliteBattle.GetTrainerID(trainerid.id)
+    str = sprintf("%s%03d", files[i], trainerNumber) if !pbResolveBitmap(str)
     str2 = sprintf("%s_%s", files[i], trainerid.id)
-    #str2 = sprintf("%s_%03d", files[i], trainerid.id_number) if !pbResolveBitmap(str2)
+    trainerNumber = EliteBattle.GetTrainerID(trainerid.id)
+    str2 = sprintf("%s_%03d", files[i], trainerNumber) if !pbResolveBitmap(str2)
     evl = files[i] + "Evil"
     skl = files[i] + "Skull"
     files[i] = evl if pbResolveBitmap(evl) && evilteam

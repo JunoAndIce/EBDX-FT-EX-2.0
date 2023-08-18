@@ -1,11 +1,5 @@
 #-------------------------------------------------------------------------------
-#  SHOCKWAVE
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:SHOCKWAVE) do
-  EliteBattle.playMoveAnimation(:THUNDERBOLT, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
-#  THUNDERBOLT
+#  Thunderbolt
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:THUNDERBOLT) do | args |
   strike = *args; strike = false if strike.nil?

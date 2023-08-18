@@ -1,10 +1,4 @@
 #-------------------------------------------------------------------------------
-#  HYPERFANG
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:HYPERFANG) do
-  EliteBattle.playMoveAnimation(:CRUNCH, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
 #  Crunch
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:CRUNCH) do
@@ -68,7 +62,7 @@ EliteBattle.defineMoveAnimation(:CRUNCH) do
       fp["fang2"].oy += 2
     end
     if i==32
-      pbSEPlay("Anim/Bite")
+      pbSEPlay("Anim/Super Fang")
     end
     for j in 0...10
       next if i < 40

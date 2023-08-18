@@ -1,10 +1,4 @@
 #-------------------------------------------------------------------------------
-#  JUDGMENT
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:JUDGMENT) do
-  EliteBattle.playMoveAnimation(:FLASHCANNON, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
 #  Flash Cannon
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:FLASHCANNON) do

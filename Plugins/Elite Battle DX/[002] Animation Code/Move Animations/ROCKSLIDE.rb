@@ -4,7 +4,6 @@
 EliteBattle.defineMoveAnimation(:ROCKSLIDE) do
   indexes = []
   max = @battle.pbSideSize(@targetIsPlayer ? 0 : 1)
-  max = 2 if max > 2 
   for i in 0...max
     i = (@targetIsPlayer ? i*2 : (i*2 + 1))
     indexes.push(i) if @sprites["pokemon_#{i}"] && @sprites["pokemon_#{i}"].actualBitmap

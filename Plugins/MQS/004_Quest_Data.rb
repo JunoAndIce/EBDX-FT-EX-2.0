@@ -431,7 +431,7 @@ module QuestModule
 	
 	Quest36 = {
     :ID => "36",
-    :Name => "Talkative Grunts",
+    :Name => "Talkative Grunts.",
     :Stage1 => "Tail the Team Blight Grunts.",
     :Location1 => "Paeonia City",
     :QuestDescription => "Faye and I ran into some Team Blight grunts who were talking about taking a boat to Ixora Island. There's a possibility that Dori could be on her way to that Island as well! Faye wants me to tail the Blight grunts, and get a little more information out of them to be sure. I should make sure I'm not seen by them.",
@@ -440,10 +440,92 @@ module QuestModule
 	
 	Quest37 = {
     :ID => "37",
-    :Name => "The road to Syringa",
+    :Name => "The road to Syringa!",
     :Stage1 => "Head to Syringa Town.",
     :Location1 => "Syringa Town",
     :QuestDescription => "The Team Blight grunts we were overhearing tried to ambush me! Luckily the officers showed up to get me out of that situation. After getting ambushed by Team Blight grunts, we decided to follow them to Syringa Town to hopefully get on the boat they're taking. We're probably going to need Rose's help.",
     :RewardString => "A Boat Ride!"
+	}
+	
+	Quest38 = {
+    :ID => "38",
+    :Name => "Small Town, Big Problems!",
+    :Stage1 => "Explore Syringa Town.",
+    :Location1 => "Syringa Area",
+    :QuestDescription => "As expected, Rose wasn't too happy about the news on Dori. She's going to try to help us get tickets to get on the S.S. Gladiolus, so that we can pursue Team Blight onto Ixora Island. In the meantime, we're supposed to be getting more information and taking a little break until Rose gets back to us.",
+    :RewardString => "Plenty of Info"
+	}
+	
+	
+	Quest39 = {
+    :ID => "39",
+    :Name => "A Solution?",
+    :Stage1 => "Return to Garrison's House",
+    :Location1 => "Syringa Town",
+    :QuestDescription => "Wow, what a day! Faye and I ran into two Team Blight grunts, who were no help, and I had battles with Del and Garrison! After a long day, it's time to return back to Garrison's house to see what the final verdict will be on the tickets. ",
+    :RewardString => "Tickets...?"
+	}
+	
+	Quest40 = {
+    :ID => "40",
+    :Name => "The S.S. Gladiolus!",
+    :Stage1 => "Head to the harbor south of town",
+    :Location1 => "Syringa Town",
+    :QuestDescription => "Thanks to some new and old faces, we're able to finally board the S.S. Gladiolus and get to Ixora Island! The others are waiting for me at Syringa Harbor. If I have any other obligations to take care of, now would be the time. It seems like uur chance to save Dori is getting closer and closer!",
+    :RewardString => "The Boat Ride!"
+	}
+	
+	Quest41 = {
+    :ID => "41",
+    :Name => "Nice Boat!",
+    :Stage1 => "Check on the group.",
+    :Location1 => "S.S. Gladiolus",
+    :QuestDescription => "We've finally boarded the S.S. Gladiolus! It looks so much larger from the inside! Now that we're finally in, the plan was to lay low until we get to Ixora Island. In the meantime, let's check out the gang and see how everyone's doing!",
+    :RewardString => "Exploration!"
+	}
+	
+	Quest42 = {
+    :ID => "42",
+    :Name => "A Blight?! On my Boat?!",
+    :Stage1 => "Follow Garrison into the engine room.",
+    :Location1 => "S.S. Gladiolus",
+    :QuestDescription => "After checking up on the gang, I ran into Garrison on the lower levels. He said he's found traces of Team Blight on the boat, and wants to check it out. The others don't look like they're up to it right now, but I'm always ready to battle! Let's go!",
+    :RewardString => "Battles?"
+	}
+	
+	Quest43 = {
+    :ID => "43",
+    :Name => "Island Resort!",
+    :Stage1 => "Head to Ixora Town.",
+    :Location1 => "Ixora Island",
+    :QuestDescription => "We finally landed on Ixora Island! It seems like everyone else has already gone on ahead, so I should probably get going. We're headed to the nearest town so we can start our search on Dori. Let's get this show on the road!",
+    :RewardString => "A new view!"
+	}
+	
+	Quest44 = {
+    :ID => "44",
+    :Name => "Small Island Town.",
+    :Stage1 => "Explore the Ixora Area",
+    :Location1 => "Ixora Island",
+    :QuestDescription => "Now that I've made it to Ixora Town, it's time to begin this search for Team Blight. Del, Faye and Garrison have already gotten started in their own ways, so let's hop to it! Let's look around town for some information, and maybe check out the gym in the meantime!",
+    :RewardString => "New information."
+	}
+	
+	Quest45 = {
+    :ID => "45",
+    :Name => "Spelunking on an Island!",
+    :Stage1 => "Head to Ixora Caverns",
+    :Location1 => "Ixora Cavern",
+    :QuestDescription => "So it seems like Milo has stepped away from his gym for a bit. Del has explained to me that Garrison and Faye have heard reports of Team Blight entering and exiting the cave in Ixora Forest. It seems like our trip to this Island is finally yielding results! Time to see what this cave has in store for us!",
+    :RewardString => "New information."
+	}
+	
+	Quest45 = {
+    :ID => "46",
+    :Name => "Domain in Danger!",
+    :Stage1 => "Find out the source of Team Blight.",
+    :Location1 => "Ixora Domain",
+    :QuestDescription => "So it seems like Milo has stepped away from his gym for a bit. Del has explained to me that Garrison and Faye have heard reports of Team Blight entering and exiting the cave in Ixora Forest. It seems like our trip to this Island is finally yielding results! Time to see what this cave has in store for us!",
+    :RewardString => "New information."
 	}
 end

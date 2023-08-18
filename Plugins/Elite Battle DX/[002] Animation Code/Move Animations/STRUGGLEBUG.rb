@@ -1,10 +1,4 @@
 #-------------------------------------------------------------------------------
-#  ATTACKORDER
-#-------------------------------------------------------------------------------
-EliteBattle.defineMoveAnimation(:ATTACKORDER) do | args |
-  EliteBattle.playMoveAnimation(:STRUGGLEBUG, @scene, @userIndex, @targetIndex, @hitNum, @multiHit, nil, false)
-end
-#-------------------------------------------------------------------------------
 #  Struggle Bug
 #-------------------------------------------------------------------------------
 EliteBattle.defineMoveAnimation(:STRUGGLEBUG) do

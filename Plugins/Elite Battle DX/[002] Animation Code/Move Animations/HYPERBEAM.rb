@@ -9,7 +9,7 @@ EliteBattle.defineMoveAnimation(:HYPERBEAM) do
   fp = {}; rndx = []; rndy = []; dx = []; dy = []
   fp["bg"] = ScrollingSprite.new(@viewport)
   fp["bg"].speed = 64
-  fp["bg"].setBitmap("Graphics/EBDX/Animations/Moves/eb263_bg_3")
+  fp["bg"].setBitmap("Graphics/EBDX/Animations/Moves/eb263_bg")
   fp["bg"].color = Color.new(0,0,0,255)
   fp["bg"].opacity = 0
   for i in 0...72
@@ -26,7 +26,7 @@ EliteBattle.defineMoveAnimation(:HYPERBEAM) do
   end
   for i in 0...72
     fp["#{i}2"] = Sprite.new(@viewport)
-    fp["#{i}2"].bitmap = pbBitmap("Graphics/EBDX/Animations/Moves/eb263_3_3")
+    fp["#{i}2"].bitmap = pbBitmap("Graphics/EBDX/Animations/Moves/eb263_3")
     fp["#{i}2"].ox = fp["#{i}2"].bitmap.width/2
     fp["#{i}2"].oy = fp["#{i}2"].bitmap.height/2
     fp["#{i}2"].opacity = 0
@@ -63,11 +63,12 @@ EliteBattle.defineMoveAnimation(:HYPERBEAM) do
     else
       fp["bg"].color.alpha -= 25.5
     end
-    pbSEPlay("Anim/HyperBeam") if i == 4
+    pbSEPlay("Anim/Harden") if i == 4
     fp["bg"].update
     @scene.wait(1,true)
   end
   @scene.wait(4,true)
+  pbSEPlay("Anim/Psych Up")
   for i in 0...96
     ax, ay = @userSprite.getAnchor
     cx, cy = @targetSprite.getCenter(true)
